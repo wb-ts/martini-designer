@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SendJmsMessageForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridColumnGap": 10,
+      "gridTemplateColumns": "max-content 1fr",
+    }
+  }
+>
+  <label
+    htmlFor="destination"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Destination
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr max-content",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <input
+      className="theia-input"
+      name="destination"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+      value="queue://testing"
+    />
+    <input
+      className="theia-button"
+      onClick={[Function]}
+      type="button"
+      value="Browse..."
+    />
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <label
+    htmlFor="message"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Message
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "grid",
+          "gridTemplateColumns": "max-content max-content",
+          "marginBottom": "5px",
+        }
+      }
+    >
+      <div
+        className="sc-AxjAm bHDVdV"
+      >
+        <input
+          checked={true}
+          name="messageType"
+          onChange={[Function]}
+          type="radio"
+          value={0}
+        />
+        <div
+          className="label"
+          onClick={[Function]}
+        >
+          Raw Text
+        </div>
+      </div>
+      <div
+        className="sc-AxjAm bHDVdV"
+      >
+        <input
+          checked={false}
+          name="messageType"
+          onChange={[Function]}
+          type="radio"
+          value={1}
+        />
+        <div
+          className="label"
+          onClick={[Function]}
+        >
+          File/URL
+        </div>
+      </div>
+    </div>
+    <textarea
+      className="theia-input"
+      name="message"
+      onBlur={[Function]}
+      onChange={[Function]}
+      rows="5"
+      style={
+        Object {
+          "resize": "none",
+        }
+      }
+      value="Testing!"
+    />
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+</form>
+`;

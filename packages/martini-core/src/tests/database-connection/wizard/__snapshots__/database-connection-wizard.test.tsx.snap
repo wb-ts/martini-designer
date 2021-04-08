@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateDatabaseConnectionForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridColumnGap": 10,
+      "gridTemplateColumns": "max-content 1fr",
+    }
+  }
+>
+  <label
+    htmlFor="type"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Type
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <select
+      className="theia-select"
+      name="type"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value="cassandra"
+    >
+      <option
+        value="cassandra"
+      >
+        Cassandra
+      </option>
+      <option
+        value="jdbc"
+      >
+        JDBC
+      </option>
+      <option
+        value="mongodb"
+      >
+        Mongodb
+      </option>
+      <option
+        value="redis"
+      >
+        Redis
+      </option>
+    </select>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <label
+    htmlFor="name"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Name
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr max-content",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <input
+      autoFocus={true}
+      className="theia-input"
+      name="name"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="text"
+      value="test"
+    />
+    <div
+      style={
+        Object {
+          "fontSize": "16px",
+          "marginLeft": "4px",
+        }
+      }
+      title="Pressing Up or Down arrow while editing the name changes the type."
+    >
+      ⇅
+    </div>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+</form>
+`;

@@ -1,0 +1,33 @@
+.properties-table {
+    padding: 0;
+    width: 100%;
+}
+
+.properties-table table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.properties-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.properties-table th {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--martini-table-border);
+    border-right: 1px solid var(--martini-table-border);
+}
+
+.properties-table td {
+    margin: 0;
+    height: 25px;
+    padding: 0 5px 0px 4px;
+    border-bottom: 1px solid var(--martini-table-border);
+    border-right: 1px solid var(--martini-table-border);
+}
+
+.properties-table th:last-child,
+td:last-child {
+    border-right: 0;
+}

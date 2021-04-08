@@ -1,0 +1,7 @@
+:root {
+  /* Custom Theme Colors */
+  --martini-purple: #82409d;
+  --martini-purple1: #9b59b6;
+  --martini-error-color: var(--md-red-300);
+  --martini-table-border: var(--md-grey-600);
+}

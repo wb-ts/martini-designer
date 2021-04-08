@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DestinationPicker should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridColumnGap": 10,
+      "gridTemplateColumns": "max-content 1fr",
+    }
+  }
+>
+  <label
+    htmlFor="create"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    From:
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <div
+      className="sc-AxirZ fiReNW"
+    >
+      <input
+        checked={true}
+        name="create"
+        onChange={[Function]}
+        type="radio"
+        value={false}
+      />
+      <div
+        className="label"
+        onClick={[Function]}
+      >
+        Existing JMS Queues and Topics
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ fiReNW"
+    >
+      <input
+        checked={false}
+        name="create"
+        onChange={[Function]}
+        type="radio"
+        value={true}
+      />
+      <div
+        className="label"
+        onClick={[Function]}
+      >
+        New JMS Queue or Topic
+      </div>
+    </div>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "gridColumn": "span 2",
+        "height": "310px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "grid",
+          "gridRowGap": "4px",
+          "gridTemplateColumns": "1fr",
+          "gridTemplateRows": "max-content 1fr",
+          "height": "100%",
+        }
+      }
+    >
+      <input
+        className="theia-input"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search..."
+        type="text"
+      />
+      <ul
+        className="sc-AxjAm hGTuJe theia-input"
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        <li
+          className="item "
+          onClick={[Function]}
+          onDoubleClick={[Function]}
+        >
+          <span
+            className="martini-tree-icon martini-jms-queue-icon"
+          />
+          queue://helloWorld
+        </li>
+        <li
+          className="item "
+          onClick={[Function]}
+          onDoubleClick={[Function]}
+        >
+          <span
+            className="martini-tree-icon martini-jms-topic-icon"
+          />
+          topic://testing
+        </li>
+        <li
+          className="item "
+          onClick={[Function]}
+          onDoubleClick={[Function]}
+        >
+          <span
+            className="martini-tree-icon martini-jms-queue-icon"
+          />
+          queue://nice
+        </li>
+      </ul>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`DestinationPicker should be rendered with default selected destination 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridColumnGap": 10,
+      "gridTemplateColumns": "max-content 1fr",
+    }
+  }
+>
+  <label
+    htmlFor="create"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    From:
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <div
+      className="sc-AxirZ fiReNW"
+    >
+      <input
+        checked={true}
+        name="create"
+        onChange={[Function]}
+        type="radio"
+        value={false}
+      />
+      <div
+        className="label"
+        onClick={[Function]}
+      >
+        Existing JMS Queues and Topics
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ fiReNW"
+    >
+      <input
+        checked={false}
+        name="create"
+        onChange={[Function]}
+        type="radio"
+        value={true}
+      />
+      <div
+        className="label"
+        onClick={[Function]}
+      >
+        New JMS Queue or Topic
+      </div>
+    </div>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "gridColumn": "span 2",
+        "height": "310px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "grid",
+          "gridRowGap": "4px",
+          "gridTemplateColumns": "1fr",
+          "gridTemplateRows": "max-content 1fr",
+          "height": "100%",
+        }
+      }
+    >
+      <input
+        className="theia-input"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search..."
+        type="text"
+      />
+      <ul
+        className="sc-AxjAm hGTuJe theia-input"
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        <li
+          className="item "
+          onClick={[Function]}
+          onDoubleClick={[Function]}
+        >
+          <span
+            className="martini-tree-icon martini-jms-queue-icon"
+          />
+          queue://helloWorld
+        </li>
+        <li
+          className="item item-selected"
+          onClick={[Function]}
+          onDoubleClick={[Function]}
+        >
+          <span
+            className="martini-tree-icon martini-jms-topic-icon"
+          />
+          topic://testing
+        </li>
+        <li
+          className="item "
+          onClick={[Function]}
+          onDoubleClick={[Function]}
+        >
+          <span
+            className="martini-tree-icon martini-jms-queue-icon"
+          />
+          queue://nice
+        </li>
+      </ul>
+    </div>
+  </div>
+</form>
+`;

@@ -1,0 +1,64 @@
+.Collapsible {
+    padding-bottom: 2px;
+}
+
+.Collapsible__contentInner {
+    padding: 10px;
+    border-top: 0;
+}
+
+.Collapsible__contentInner p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Collapsible__contentInner p:last-child {
+    margin-bottom: 0;
+}
+
+.Collapsible__trigger {
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+    padding: 10px;
+    background: var(--theia-editorWidget-background);
+    color: white;
+}
+
+.Collapsible__trigger:after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+}
+
+.Collapsible__trigger.is-open:after {
+    transform: rotateZ(180deg);
+}
+
+.Collapsible__trigger.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+}
+
+.CustomTriggerCSS {
+    background-color: lightcoral;
+    transition: background-color 200ms ease;
+}
+
+.CustomTriggerCSS--open {
+    background-color: darkslateblue;
+}
+
+.Collapsible__custom-sibling {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #cbb700;
+    color: black;
+}

@@ -1,0 +1,1672 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedisConnectionForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      General Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="name"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+          >
+            Name
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="name"
+              onBlur={[Function]}
+              onChange={[Function]}
+              readOnly={true}
+              type="text"
+              value="test"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="uri"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Describes the hosts and options to be used when connecting to a Redis server."
+          >
+            URI
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr max-content",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="uri"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value="redis://<HOST>:6379/<DATABASE>"
+            />
+            <input
+              className="theia-button"
+              onClick={[Function]}
+              type="button"
+              value="Choose"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="password"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The password to use when authenticating to the server."
+          >
+            Password
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="password"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="password"
+              value=""
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="autoStart"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Automatically starts the database connection during Martini startup"
+          >
+            Auto Start
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="autoStart"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Advanced Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="clientOptions.pingBeforeActivateConnection"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Enables initial PING barrier before any connection is usable."
+          >
+            Ping Before Activate Connection
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.pingBeforeActivateConnection"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.autoReconnect"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Controls auto-reconnect behavior on connections."
+          >
+            Auto Reconnect
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="clientOptions.autoReconnect"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.cancelCommandsOnReconnectFailure"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="If this flag is true any queued commands will be canceled when a reconnect fails within the activation sequence."
+          >
+            Cancel Commands On Reconnect Failure
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.cancelCommandsOnReconnectFailure"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.publishOnScheduler"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Use a dedicated Scheduler to emit reactive data signals."
+          >
+            Publish On Scheduler
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.publishOnScheduler"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.suspendReconnectOnProtocolFailure"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="If this flag is true the reconnect will be suspended on protocol errors."
+          >
+            Suspend Reconnect On Protocol Failure
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.suspendReconnectOnProtocolFailure"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.requestQueueSize"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Request queue size for a connection."
+          >
+            Request Queue Size
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.requestQueueSize"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={2147483647}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.disconnectedBehavior"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Behavior for command invocation when connections are in a disconnected state."
+          >
+            Disconnected Behavior
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <select
+              className="theia-select"
+              name="clientOptions.disconnectedBehavior"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="DEFAULT"
+            >
+              <option
+                value="DEFAULT"
+              >
+                Default
+              </option>
+              <option
+                value="ACCEPT_COMMANDS"
+              >
+                Accept Commands
+              </option>
+              <option
+                value="REJECT_COMMANDS"
+              >
+                Reject Commands
+              </option>
+            </select>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      SSL Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="clientOptions.sslOptions.sslProvider"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Use the OpenSSL provider or the JDK SSL for SSL connections."
+          >
+            SSL Provider
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <select
+              className="theia-select"
+              name="clientOptions.sslOptions.sslProvider"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="JDK"
+            >
+              <option
+                value="JDK"
+              >
+                JDK
+              </option>
+              <option
+                value="OPENSSL"
+              >
+                OPENSSL
+              </option>
+            </select>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.sslOptions.keystoreFile"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The Keystore file to load client certificates."
+          >
+            Keystore File
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.sslOptions.keystoreFile"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.sslOptions.keystorePassword"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The password of the Keystore file."
+          >
+            Keystore Password
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.sslOptions.keystorePassword"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="password"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.sslOptions.truststoreFile"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The Truststore file to load trusted certificates."
+          >
+            Truststore File
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.sslOptions.truststoreFile"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.sslOptions.truststorePassword"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The password of the Truststore file."
+          >
+            Truststore Password
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.sslOptions.truststorePassword"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="password"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.sslOptions.startTls"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to start TLS."
+          >
+            Start TLS
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.sslOptions.startTls"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Socket Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="clientOptions.socketOptions.connectTimeoutMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The connection timeout, set to -1 for no timeout."
+          >
+            Connect Timeout (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.socketOptions.connectTimeoutMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={10000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.socketOptions.keepAlive"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to enable TCP keepalive"
+          >
+            Keep Alive
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.socketOptions.keepAlive"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.socketOptions.tcpNoDelay"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to use TCP NoDelay."
+          >
+            TCP No Delay
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.socketOptions.tcpNoDelay"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Connection Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="clientOptions.connectionOptions.connectionTimeoutMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The connection timeout, set to -1 for no timeout."
+          >
+            Connection Timeout (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionOptions.connectionTimeoutMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={-1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionOptions.autoFlushCommands"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to auto flush commands."
+          >
+            Auto Flush Commands
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="clientOptions.connectionOptions.autoFlushCommands"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.maxTotal"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A negative value indicates that there is no limit to connections allocated by the pool."
+          >
+            Maximum Total
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.maxTotal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={8}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.maxIdle"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A negative value indicates that there is no limit to the number of idle connections held by the pool."
+          >
+            Maximum Idle
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.maxIdle"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={8}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.minIdle"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="If the configured value of Min Idle is greater than the configured value for Max Idle, then the value of Max Idle will be used instead."
+          >
+            Minimum Idle
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.minIdle"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={0}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.evictionPolicyClassName"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The data eviction method to be used when the database size reaches its limit."
+          >
+            Eviction Policy Name
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.evictionPolicyClassName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.timeBetweenEvictionRunsMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A value of -1 indicates idle object eviction to be disabled by default."
+          >
+            Time Between Eviction Runs (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.timeBetweenEvictionRunsMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={-1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.minEvictableIdleTimeMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The minimum amount of time an object may sit idle in the pool before it is eligible for eviction."
+          >
+            Evictable Idle Time (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.minEvictableIdleTimeMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1800000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.softMinEvictableIdleTimeMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The minimum amount of time an object may sit idle in the pool before it is eligible for eviction with the extra condition that at least \\"minIdle\\" object instances remain in the pool."
+          >
+            Soft Evictable Idle Time (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.softMinEvictableIdleTimeMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={-1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.numTestsPerEvictionRun"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A negative value indicates to test all connections."
+          >
+            Tests Per Eviction Run
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.numTestsPerEvictionRun"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={3}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.evictorShutdownTimeoutMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The timeout to be used when waiting for the Evictor to shutdown if the pool is closed and is the only pool still using the the value for the Evictor."
+          >
+            Evictor Shutdown Timeout (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.evictorShutdownTimeoutMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={10000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.jmxEnabled"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Determines if JMX will be enabled for pools created and registered with the platform."
+          >
+            JMX Enabled
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.connectionPoolOptions.jmxEnabled"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.jmxNameBase"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The base name that will be used as part of the name assigned to JMX enabled pools created with this configuration instance."
+          >
+            JMX Name Base
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.jmxNameBase"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.jmxNamePrefix"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The prefix name that will be used as part of the name assigned to JMX enabled pools created with this configuration instance."
+          >
+            JMX Name Prefix
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.jmxNamePrefix"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.maxWaitMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The amount of time to wait for an available connection."
+          >
+            Maximum Wait
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="clientOptions.connectionPoolOptions.maxWaitMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={0}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.blockWhenExhausted"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A value of false means an error will occur when a client requests a connection and none are available."
+          >
+            Block When Exhausted
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="clientOptions.connectionPoolOptions.blockWhenExhausted"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.lifo"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Determines whether or not the pool returns idle objects in last-in-first-out order."
+          >
+            LIFO
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="clientOptions.connectionPoolOptions.lifo"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.fairness"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Ensure that threads receive available instances in request arrival order."
+          >
+            Fairness
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.connectionPoolOptions.fairness"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.testOnCreate"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether connections should be tested upon creation."
+          >
+            Test On Create
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.connectionPoolOptions.testOnCreate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.testOnBorrow"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether connections should be tested upon borrowing from the pool."
+          >
+            Test On Borrow
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.connectionPoolOptions.testOnBorrow"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.testOnReturn"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether connections should be tested upon returning to the pool."
+          >
+            Test On Return
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.connectionPoolOptions.testOnReturn"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="clientOptions.connectionPoolOptions.testWhileIdle"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether connections should be tested while idle."
+          >
+            Test While Idle
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="clientOptions.connectionPoolOptions.testWhileIdle"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;

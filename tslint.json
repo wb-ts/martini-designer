@@ -1,0 +1,46 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "max-line-length": [
+      true,
+      120
+    ],
+    "no-consecutive-blank-lines": true,
+    "no-trailing-whitespace": true,
+    "quotemark": [
+      true,
+      "double"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "trailing-comma": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-operator",
+      "check-typecast"
+    ],
+    "arrow-return-shorthand": true,
+    "no-empty": false,
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "allow-leading-underscore"
+      ]
+    },
+    "class-name": true,
+    "no-duplicate-imports": true,
+    "max-classes-per-file": false,
+    "no-namespace": false,
+    "no-shadowed-variable": false
+  },
+  "jsRules": {
+  }
+}

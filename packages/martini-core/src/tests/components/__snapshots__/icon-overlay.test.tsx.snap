@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should be rendered with multiple overlay icons 1`] = `
+<div
+  className="martini-tree-icon test"
+  style={
+    Object {
+      "marginRight": "4px",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="test1"
+    style={
+      Object {
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "8px 8px",
+        "height": 8,
+        "position": "absolute",
+        "right": "0",
+        "top": "0",
+        "width": 8,
+      }
+    }
+  />
+  <div
+    className="test2"
+    style={
+      Object {
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "8px 8px",
+        "height": 8,
+        "left": "0",
+        "position": "absolute",
+        "top": "0",
+        "width": 8,
+      }
+    }
+  />
+  <div
+    className="test2"
+    style={
+      Object {
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "8px 8px",
+        "bottom": "0",
+        "height": 8,
+        "position": "absolute",
+        "right": "0",
+        "width": 8,
+      }
+    }
+  />
+  <div
+    className="test2"
+    style={
+      Object {
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "8px 8px",
+        "bottom": "0",
+        "height": 8,
+        "left": "0",
+        "position": "absolute",
+        "width": 8,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Icon should be rendered with one overlay icon 1`] = `
+<div
+  className="martini-tree-icon test"
+  style={
+    Object {
+      "marginRight": "4px",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="other"
+    style={
+      Object {
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "8px 8px",
+        "height": 8,
+        "position": "absolute",
+        "right": "0",
+        "top": "0",
+        "width": 8,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Icon should be rendered without overlay icon 1`] = `
+<div
+  className="martini-tree-icon test"
+  style={
+    Object {
+      "marginRight": "4px",
+      "position": "relative",
+    }
+  }
+/>
+`;

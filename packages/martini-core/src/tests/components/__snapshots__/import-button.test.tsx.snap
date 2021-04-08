@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImportButton should be rendered 1`] = `
+<div>
+  <input
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <input
+    className="theia-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "marginLeft": 0,
+      }
+    }
+    type="button"
+    value="Import..."
+  />
+</div>
+`;

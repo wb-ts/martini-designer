@@ -1,0 +1,70 @@
+---
+project:
+  name: Martini IDE
+  key: MIDE
+  description: Martini IDE build and deployment plans
+  permissions:
+    - group: ph-technical-sea-softeng-coderstudio_team_lead
+      types: VIEW,BUILD,ADMIN
+    - group: ph-technical-sea-softeng-frontend_team_lead
+      types: VIEW,BUILD,ADMIN
+    - loggedInUser:
+      types: VIEW
+  notifications:
+    - type: PLAN_COMPLETED
+      recipients:
+        # Front End Team Room
+        - chat: AAAA91LQZsM/toZ7xsA4DJ8_perztLGERFX-K21x_kJG56jP3C_eGCM%3D
+
+plans:
+  - Dev:
+      key: DEV
+      description: Build plan for the develop branch
+      planRepositories:
+        - martini-ide/develop
+      triggers:
+        - remote
+      stages:
+        - Build:
+            jobs:
+              - Build
+  - Branches:
+      key: BRANCHES
+      description: Build plan for the branches on PR
+      # disable main plan, only plan branches are enabled
+      enabled: false
+      permissions:
+        - group: ph-technical-sea-softeng-coderstudio_team
+          types: VIEW,BUILD
+        - group: ph-technical-sea-softeng-frontend_team
+          types: VIEW,BUILD
+        - loggedInUser:
+          types: VIEW
+      planRepositories:
+        - martini-ide/develop
+      triggers:
+        - remote
+      planBranchManagement:
+        onPR: true
+      stages:
+        - Build:
+            jobs:
+              - Build
+jobs:
+  - Build:
+      key: BUILD
+      requirements:
+        - system.builder.command.yarn
+      tasks:
+        - cleanWorkingDirectory
+        - vcsCheckout:
+            checkoutRepo: martini-ide
+        - script: |
+            nvm use 12.14.1
+            yarn
+            yarn jest
+      finalTasks:
+        - testParser:
+            # it's actually using Jest but the test results are converted to Mocha format
+            type: MOCHA
+            resultDirectories: jest.json

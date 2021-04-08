@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateEndpointForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridColumnGap": 10,
+      "gridTemplateColumns": "max-content 1fr",
+    }
+  }
+>
+  <label
+    htmlFor="packageName"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Package
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <select
+      className="theia-select"
+      name="packageName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value="test"
+    >
+      <option
+        value="test"
+      >
+        test
+      </option>
+    </select>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <label
+    htmlFor="type"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Type
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <select
+      className="theia-select"
+      name="type"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value="dir-watcher"
+    >
+      <option
+        value="dir-watcher"
+      >
+        Directory Watcher
+      </option>
+      <option
+        value="email"
+      >
+        Email
+      </option>
+      <option
+        value="ftp-client"
+      >
+        FTP Client
+      </option>
+      <option
+        value="ftp-server"
+      >
+        FTP Server
+      </option>
+      <option
+        value="http-filter"
+      >
+        HTTP Filter
+      </option>
+      <option
+        value="jabber"
+      >
+        Jabber
+      </option>
+      <option
+        value="jms-listener"
+      >
+        JMS Listener
+      </option>
+      <option
+        value="kafka-listener"
+      >
+        Kafka Listener
+      </option>
+      <option
+        value="mongodb-listener"
+      >
+        MongoDB Listener
+      </option>
+      <option
+        value="redis-listener"
+      >
+        Redis Pub/Sub Listener
+      </option>
+      <option
+        value="rest-alias"
+      >
+        URL Alias
+      </option>
+      <option
+        value="rss"
+      >
+        RSS
+      </option>
+      <option
+        value="scheduler"
+      >
+        Scheduler
+      </option>
+      <option
+        value="tracker-resubmit"
+      >
+        Tracker Resubmit
+      </option>
+    </select>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <label
+    htmlFor="name"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Name
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr max-content",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <input
+      autoFocus={true}
+      className="theia-input"
+      name="name"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      type="text"
+      value="test"
+    />
+    <div
+      style={
+        Object {
+          "fontSize": "16px",
+          "marginLeft": "4px",
+        }
+      }
+      title="Pressing Up or Down arrows while editing the name changes the type, if alt is pressed it changes the package."
+    >
+      ⇅
+    </div>
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+</form>
+`;

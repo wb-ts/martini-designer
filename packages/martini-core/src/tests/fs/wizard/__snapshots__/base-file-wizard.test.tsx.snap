@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateFileForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridColumnGap": 10,
+      "gridTemplateColumns": "max-content 1fr",
+    }
+  }
+>
+  <label
+    htmlFor="location"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Location
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <input
+      className="theia-input"
+      name="location"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+      value="/examples/code"
+    />
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+  <label
+    htmlFor="name"
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "marginTop": "3px",
+        "verticalAlign": "center",
+      }
+    }
+  >
+    Name
+  </label>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gridTemplateColumns": "1fr",
+        "gridTemplateRows": "max-content 1fr",
+      }
+    }
+  >
+    <input
+      className="theia-input"
+      name="name"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+      value="MyFile"
+    />
+    <div
+      className="form-error-message-wrapper"
+    />
+  </div>
+</form>
+`;

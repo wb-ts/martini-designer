@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List is rendered with a search field 1`] = `
+<div
+  style={
+    Object {
+      "display": "grid",
+      "gridRowGap": "4px",
+      "gridTemplateColumns": "1fr",
+      "gridTemplateRows": "max-content 1fr",
+    }
+  }
+>
+  <input
+    className="theia-input"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Search..."
+    type="text"
+  />
+  <ul
+    className="sc-AxjAm hGTuJe theia-input"
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    <li
+      className="item item-selected"
+      onClick={[Function]}
+      onDoubleClick={[Function]}
+    >
+      <span
+        className="test-icon"
+      />
+      Item 1
+    </li>
+    <li
+      className="item "
+      onClick={[Function]}
+      onDoubleClick={[Function]}
+    >
+      <span
+        className="test-icon"
+      />
+      Item 2
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`No selected list items are rendered 1`] = `
+<ul
+  className="sc-AxjAm hGTuJe theia-input"
+  onKeyDown={[Function]}
+  tabIndex={0}
+>
+  <li
+    className="item "
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <span
+      className="test-icon"
+    />
+    Item 1
+  </li>
+  <li
+    className="item "
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <span
+      className="test-icon"
+    />
+    Item 2
+  </li>
+</ul>
+`;
+
+exports[`Selected list item is rendered with different background color 1`] = `
+<ul
+  className="sc-AxjAm hGTuJe theia-input"
+  onKeyDown={[Function]}
+  tabIndex={0}
+>
+  <li
+    className="item item-selected"
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <span
+      className="test-icon"
+    />
+    Item 1
+  </li>
+  <li
+    className="item "
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <span
+      className="test-icon"
+    />
+    Item 2
+  </li>
+</ul>
+`;

@@ -1,0 +1,20 @@
+{
+    "typescript.preferences.quoteStyle": "double",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.format.semicolons": "insert",
+    "javascript.format.semicolons": "insert",
+    "cSpell.words": [
+        "Gloop",
+        "Gloovy",
+        "JDBC",
+        "Undoable",
+        "ctrlcmd",
+        "esbapi",
+        "focusable",
+        "formik",
+        "inversify",
+        "keyspace",
+        "resizer",
+        "theia"
+    ]
+}

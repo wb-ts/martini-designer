@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolBar should be rendered with disabled icon classes 1`] = `
+<div
+  className="sc-AxjAm Zaixe"
+  style={
+    Object {
+      "gridTemplateColumns": "repeat(2, max-content)",
+      "height": undefined,
+    }
+  }
+>
+  <div
+    className="item"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="martini-icon disabled1"
+      style={
+        Object {
+          "width": "16px",
+        }
+      }
+    />
+    item 1
+  </div>
+  <div
+    className="item item-enabled"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="martini-icon test2"
+      style={
+        Object {
+          "width": "16px",
+        }
+      }
+    />
+    item 2
+  </div>
+</div>
+`;
+
+exports[`ToolBar should be rendered with toggled item 1`] = `
+<div
+  className="sc-AxjAm Zaixe"
+  style={
+    Object {
+      "gridTemplateColumns": "repeat(2, max-content)",
+      "height": undefined,
+    }
+  }
+>
+  <div
+    className="item item-enabled"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+  >
+    item 1
+  </div>
+  <div
+    className="item item-enabled item-toggled"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+  >
+    item 2
+  </div>
+</div>
+`;
+
+exports[`ToolBar should be rendered with toolbar items 1`] = `
+<div
+  className="sc-AxjAm Zaixe"
+  style={
+    Object {
+      "gridTemplateColumns": "repeat(3, max-content)",
+      "height": undefined,
+    }
+  }
+>
+  <div
+    className="item item-enabled"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+    title="this is item 1"
+  >
+    <div
+      className="martini-icon test1"
+      style={
+        Object {
+          "width": "16px",
+        }
+      }
+    />
+    item 1
+  </div>
+  <div
+    className="item item-enabled"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+    title="this is item 2"
+  >
+    <div
+      className="martini-icon test2"
+      style={
+        Object {
+          "width": "16px",
+        }
+      }
+    />
+    item 2
+  </div>
+  <div
+    className="item item-enabled"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseUp={[Function]}
+    title="this is item 3"
+  >
+    <div
+      className="martini-icon test3"
+      style={
+        Object {
+          "width": "16px",
+        }
+      }
+    />
+    item 3
+  </div>
+</div>
+`;
+
+exports[`ToolBar should be rendered without any items 1`] = `
+<div
+  className="sc-AxjAm Zaixe"
+  style={
+    Object {
+      "gridTemplateColumns": undefined,
+      "height": undefined,
+    }
+  }
+/>
+`;

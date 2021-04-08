@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render InfoPopup with proposal information 1`] = `
+<div
+  className="sc-AxjAm hKzUje"
+  tabIndex={-1}
+>
+  <p>
+    Hello
+  </p>
+</div>
+`;

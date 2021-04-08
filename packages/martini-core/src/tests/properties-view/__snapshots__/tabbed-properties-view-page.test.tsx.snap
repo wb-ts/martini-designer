@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should default to first tab if current tab index does not exist 1`] = `
+<div
+  className="react-tabs"
+  data-tabs={true}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100%",
+    }
+  }
+>
+  <div
+    aria-labelledby="react-tabs-6"
+    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-7"
+    role="tabpanel"
+    style={
+      Object {
+        "flex": 1,
+        "margin": 5,
+        "overflowY": "auto",
+      }
+    }
+  >
+    <div
+      className="sc-AxjAm btPfNO"
+    >
+      <div
+        className="content"
+      >
+        <div>
+          Tab 2
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul
+    className="react-tabs__tab-list"
+    role="tablist"
+    style={
+      Object {
+        "flexShrink": 0,
+      }
+    }
+  >
+    <li
+      aria-controls="react-tabs-7"
+      aria-disabled="false"
+      aria-selected="true"
+      className="react-tabs__tab react-tabs__tab--selected"
+      id="react-tabs-6"
+      role="tab"
+      tabIndex="0"
+    >
+      Tab 2
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Should not render not visible tabs 1`] = `
+<div
+  className="react-tabs"
+  data-tabs={true}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100%",
+    }
+  }
+>
+  <div
+    aria-labelledby="react-tabs-4"
+    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-5"
+    role="tabpanel"
+    style={
+      Object {
+        "flex": 1,
+        "margin": 5,
+        "overflowY": "auto",
+      }
+    }
+  >
+    <div
+      className="sc-AxjAm btPfNO"
+    >
+      <div
+        className="content"
+      >
+        <div>
+          Dummy
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul
+    className="react-tabs__tab-list"
+    role="tablist"
+    style={
+      Object {
+        "flexShrink": 0,
+      }
+    }
+  >
+    <li
+      aria-controls="react-tabs-5"
+      aria-disabled="false"
+      aria-selected="true"
+      className="react-tabs__tab react-tabs__tab--selected"
+      id="react-tabs-4"
+      role="tab"
+      tabIndex="0"
+    >
+      Dummy
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Should render visible tabs in the right other 1`] = `
+<div
+  className="react-tabs"
+  data-tabs={true}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100%",
+    }
+  }
+>
+  <div
+    aria-labelledby="react-tabs-0"
+    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-1"
+    role="tabpanel"
+    style={
+      Object {
+        "flex": 1,
+        "margin": 5,
+        "overflowY": "auto",
+      }
+    }
+  >
+    <div
+      className="sc-AxjAm btPfNO"
+    >
+      <div
+        className="content"
+      >
+        <div>
+          Dummy
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-labelledby="react-tabs-2"
+    className="react-tabs__tab-panel"
+    id="react-tabs-3"
+    role="tabpanel"
+    style={
+      Object {
+        "flex": 1,
+        "margin": 5,
+        "overflowY": "auto",
+      }
+    }
+  >
+    <div
+      className="sc-AxjAm btPfNO"
+    >
+      <div
+        className="content"
+      >
+        <div>
+          Tab 2
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul
+    className="react-tabs__tab-list"
+    role="tablist"
+    style={
+      Object {
+        "flexShrink": 0,
+      }
+    }
+  >
+    <li
+      aria-controls="react-tabs-1"
+      aria-disabled="false"
+      aria-selected="true"
+      className="react-tabs__tab react-tabs__tab--selected"
+      id="react-tabs-0"
+      role="tab"
+      tabIndex="0"
+    >
+      Dummy
+    </li>
+    <li
+      aria-controls="react-tabs-3"
+      aria-disabled="false"
+      aria-selected="false"
+      className="react-tabs__tab"
+      id="react-tabs-2"
+      role="tab"
+      tabIndex={null}
+    >
+      Tab 2
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpDownLabel should be rendered 1`] = `
+<div
+  style={
+    Object {
+      "fontSize": "16px",
+      "marginLeft": "4px",
+    }
+  }
+  title="Test"
+>
+  ⇅
+</div>
+`;

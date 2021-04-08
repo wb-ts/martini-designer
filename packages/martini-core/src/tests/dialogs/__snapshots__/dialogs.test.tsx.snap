@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog should be rendered 1`] = `
+<div>
+  Test
+</div>
+`;
+
+exports[`When task is executed Dialog should render content 1`] = `
+Array [
+  <div>
+    Test
+  </div>,
+  <div
+    className="sc-AxjAm gvZDkL"
+    style={
+      Object {
+        "background": "var(--theia-editorWidget-background)",
+      }
+    }
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="loader-large progress-loader-end"
+      />
+      <div
+        className="progress-message"
+      >
+        Test...
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`When task is executed Dialog should render progress 1`] = `
+Array [
+  <div>
+    Test
+  </div>,
+  <div
+    className="sc-AxjAm gvZDkL"
+    style={
+      Object {
+        "background": "var(--theia-editorWidget-background)",
+      }
+    }
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="loader-large progress-loader-end"
+      />
+      <div
+        className="progress-message"
+      >
+        Test...
+      </div>
+    </div>
+  </div>,
+]
+`;

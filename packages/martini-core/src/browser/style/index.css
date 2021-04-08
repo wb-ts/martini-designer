@@ -1,0 +1,178 @@
+:root {
+    --martini-small-icon-size: 16px;
+    --martini-big-icon-size: 128px;
+    --martini-overlay-icon-size: 8px;
+    --checkbox-background-toggled-outline: #474747;
+}
+
+.martini-icon,
+.martini-tree-icon {
+    background-size: var(--martini-small-icon-size);
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.martini-tree-icon {
+    width: var(--martini-small-icon-size);
+    height: var(--martini-small-icon-size);
+    min-width: var(--martini-small-icon-size);
+    align-self: center;
+    margin-right: 4px;
+}
+
+.martini-big-icon {
+    background-size: var(--martini-big-icon-size);
+    width: var(--martini-big-icon-size);
+    height: var(--martini-big-icon-size);
+    min-width: var(--martini-big-icon-size);
+    align-self: center;
+}
+
+.martini-overlay-icon {
+    background-size: var(--martini-overlay-icon-size);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.martini-tab-icon {
+    background-color: transparent !important;
+    background-size: 14px 14px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    margin-right: 4px;
+}
+
+.martini-inline-tree-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.disabled-icon {
+    filter: grayscale(100%);
+}
+
+textarea {
+    background: var(--theia-layout-color2);
+    color: var(--theia-ui-font-color1);
+    font-size: var(--theia-ui-font-size1);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.code-directory-fragment:hover {
+    text-decoration: underline;
+}
+
+.form-input-error-message {
+    border-top: 1px solid var(--theia-errorForeground);
+    color: var(--theia-errorForeground);
+    font-size: 10px;
+    padding: 4px 0 4px 5px;
+    white-space: pre;
+    min-width: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.form-error-message-wrapper {
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.form-label-search-match {
+    color: var(--theia-list-activeSelectionForeground);
+}
+
+.form-label-selected-search-match {
+    color: var(--theia-focusBorder);
+}
+
+.p-SplitPanel-handle {
+    background: var(--theia-scrollbarSlider-background);
+}
+
+.tree-node-drop-on {
+    border: var(--theia-list-activeSelectionBackground) dashed 2px;
+    margin-bottom: -2px;
+}
+
+.tree-node-drop-before {
+    border-top: dashed var(--theia-list-activeSelectionBackground) 2px;
+}
+
+.tree-node-drop-after {
+    border-bottom: dashed var(--theia-list-activeSelectionBackground) 2px;
+    margin-bottom: -2px;
+}
+
+
+/* This is necessary so the error overlay shows in a Theia tree */
+
+.ReactVirtualized__Grid__innerScrollContainer {
+    position: unset !important;
+}
+
+.loading-package {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-large {
+    border: 5px solid var(--theia-foreground);
+    border-top: 5px solid var(--martini-purple1);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 2s linear infinite;
+}
+
+.loader-small {
+    border: 5px solid var(--theia-foreground);
+    border-top: 5px solid var(--martini-purple1);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    animation: spin 2s linear infinite;
+}
+
+select {
+    min-height: 24px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@import "./images/icons.css";
+@import "./properties-view.css";
+@import "./tabs.css";
+@import "./collapsible.css";

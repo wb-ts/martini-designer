@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should not return items 1`] = `
+Array [
+  QuickOpenItem {
+    "options": Object {
+      "label": "No matches",
+    },
+  },
+]
+`;
+
+exports[`Should return items 1`] = `
+Array [
+  QuickOpenItem {
+    "options": Object {
+      "label": "test1",
+      "labelHighlights": Array [
+        Object {
+          "end": 4,
+          "start": 0,
+        },
+      ],
+    },
+  },
+  QuickOpenItem {
+    "options": Object {
+      "label": "test2",
+      "labelHighlights": Array [
+        Object {
+          "end": 4,
+          "start": 0,
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`Should return no results 1`] = `
+Array [
+  QuickOpenItem {
+    "options": Object {
+      "label": "No matches",
+    },
+  },
+]
+`;
+
+exports[`Should return options 1`] = `
+Object {
+  "placeholder": "Type to search for any resource...",
+}
+`;

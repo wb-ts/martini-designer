@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should highlight the text 1`] = `
+<span
+  className="thWrapper"
+>
+  <span
+    className={null}
+  >
+    This is a 
+  </span>
+  <span
+    className={null}
+    style={
+      Object {
+        "backgroundColor": "var(--theia-list-filterMatchBackground)",
+      }
+    }
+  >
+    test
+  </span>
+  <span
+    className={null}
+  >
+    .
+  </span>
+</span>
+`;
+
+exports[`Should highlight the text in children elements 1`] = `
+<div>
+  <span>
+    <span
+      className={null}
+    >
+      Response 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      HttpMethods.http
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      (
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+       
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      request: 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+      style={
+        Object {
+          "backgroundColor": "var(--theia-list-filterMatchBackground)",
+        }
+      }
+    >
+      null
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      , 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      auth: 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+      style={
+        Object {
+          "backgroundColor": "var(--theia-list-filterMatchBackground)",
+        }
+      }
+    >
+      null
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      , 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      returnAs: 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      "String"
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      , 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      responseType: 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      "Auto Detect"
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      , 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      throwHttpExceptions: 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      false
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      , 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      trackable: 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+      style={
+        Object {
+          "backgroundColor": "var(--theia-list-filterMatchBackground)",
+        }
+      }
+    >
+      null
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+       
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      )
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+       throws 
+    </span>
+  </span>
+  <span>
+    <span
+      className={null}
+    >
+      IOException
+    </span>
+  </span>
+</div>
+`;

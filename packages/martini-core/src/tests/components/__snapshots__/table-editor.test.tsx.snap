@@ -1,0 +1,3637 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableEditor should be rendered with add toolbar item 1`] = `
+<div
+  className="sc-AxgMl djATvu"
+  onKeyUp={[Function]}
+>
+  <div
+    className="sc-AxhCb kivyIk"
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "400px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Number
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Name
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Power
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Comment
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Luther
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Super Strength
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Diego
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Perfect Aim
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Allison
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Mind Control
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Klaus
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Speak to the Dead
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxhUy drFfyc"
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "gridTemplateColumns": undefined,
+        "height": "fit-content",
+      }
+    }
+  >
+    <div
+      className="item item-enabled"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      title="Add (Alt+A)"
+    >
+      <div
+        className="martini-icon martini-add-icon"
+        style={
+          Object {
+            "width": "16px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TableEditor should be rendered with delete toolbar item 1`] = `
+<div
+  className="sc-AxgMl djATvu"
+  onKeyUp={[Function]}
+>
+  <div
+    className="sc-AxhCb kivyIk"
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "400px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Number
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Name
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Power
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Comment
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Luther
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Super Strength
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Diego
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Perfect Aim
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Allison
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Mind Control
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Klaus
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Speak to the Dead
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxhUy drFfyc"
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "gridTemplateColumns": undefined,
+        "height": "fit-content",
+      }
+    }
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      title="Delete (Delete)"
+    >
+      <div
+        className="martini-icon martini-delete-icon disabled-icon"
+        style={
+          Object {
+            "width": "16px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TableEditor should be rendered with edit toolbar item 1`] = `
+<div
+  className="sc-AxgMl djATvu"
+  onKeyUp={[Function]}
+>
+  <div
+    className="sc-AxhCb kivyIk"
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "400px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Number
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Name
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Power
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Comment
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Luther
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Super Strength
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Diego
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Perfect Aim
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Allison
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Mind Control
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Klaus
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Speak to the Dead
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxhUy drFfyc"
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "gridTemplateColumns": undefined,
+        "height": "fit-content",
+      }
+    }
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      title="Edit Choices (F2)"
+    >
+      <div
+        className="martini-icon martini-edit-icon disabled-icon"
+        style={
+          Object {
+            "width": "16px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TableEditor should be rendered with toolbar 1`] = `
+<div
+  className="sc-AxgMl djATvu"
+  onKeyUp={[Function]}
+>
+  <div
+    className="sc-AxhCb kivyIk"
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "400px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Number
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Name
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Power
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Comment
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Luther
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Super Strength
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Diego
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Perfect Aim
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Allison
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Mind Control
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Klaus
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Speak to the Dead
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxhUy drFfyc"
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "gridTemplateColumns": undefined,
+        "height": "fit-content",
+      }
+    }
+  >
+    <div
+      className="item item-enabled"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      title="Add (Alt+A)"
+    >
+      <div
+        className="martini-icon martini-add-icon"
+        style={
+          Object {
+            "width": "16px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      title="Edit Choices (F2)"
+    >
+      <div
+        className="martini-icon martini-edit-icon disabled-icon"
+        style={
+          Object {
+            "width": "16px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      title="Delete (Delete)"
+    >
+      <div
+        className="martini-icon martini-delete-icon disabled-icon"
+        style={
+          Object {
+            "width": "16px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TableEditor should be rendered without toolbar 1`] = `
+<div
+  className="sc-AxgMl djATvu"
+  onKeyUp={[Function]}
+>
+  <div
+    className="sc-AxhCb kivyIk"
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "400px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Number
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Name
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Power
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Comment
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Luther
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Super Strength
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Diego
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Perfect Aim
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Allison
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Mind Control
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "120px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Klaus
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Speak to the Dead
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxhUy drFfyc"
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "gridTemplateColumns": undefined,
+        "height": "fit-content",
+      }
+    }
+  />
+</div>
+`;

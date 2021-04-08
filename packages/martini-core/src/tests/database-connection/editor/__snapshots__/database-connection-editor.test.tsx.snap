@@ -1,0 +1,2295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor should be rendered with existing connection 1`] = `
+<div
+  className="sc-fzoLsD doYcQb"
+  tabIndex={-1}
+>
+  <div
+    className="sc-AxmLO rrKMc"
+  >
+    <div
+      className="martini-tree-icon martini-jdbc-icon"
+      style={
+        Object {
+          "marginRight": "4px",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="martini-stopped-overlay-icon"
+        style={
+          Object {
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "7px 8px",
+            "height": 8,
+            "position": "absolute",
+            "right": "0",
+            "top": "0",
+            "width": 7,
+          }
+        }
+      />
+    </div>
+    <div
+      className="title-wrapper"
+    >
+      <div
+        className="title"
+      >
+        JDBC
+         Connection - 
+        test
+      </div>
+    </div>
+    <div
+      className="sc-AxheI hUNGno"
+      style={
+        Object {
+          "gridTemplateColumns": "repeat(5, max-content)",
+          "height": undefined,
+        }
+      }
+    >
+      <button
+        className="theia-button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Test Configuration
+      </button>
+      <button
+        className="theia-button"
+        onClick={[Function]}
+      >
+        Revert
+      </button>
+      <div
+        className="item item-enabled"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+        title="Find (Ctrl+F)"
+      >
+        <div
+          className="martini-icon martini-search-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item item-enabled"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-start-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-stop-icon disabled-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <form
+      action="#"
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <div
+        className="Collapsible"
+      >
+        <span
+          className="Collapsible__trigger is-open"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={null}
+          tabIndex={null}
+        >
+          General Configuration
+        </span>
+        <div
+          className="Collapsible__contentOuter"
+          onTransitionEnd={[Function]}
+          style={
+            Object {
+              "WebkitTransition": "none",
+              "height": "auto",
+              "msTransition": "none",
+              "overflow": "hidden",
+              "transition": "none",
+            }
+          }
+        >
+          <div
+            className="Collapsible__contentInner"
+          >
+            <div
+              onFocus={[Function]}
+              style={
+                Object {
+                  "display": "grid",
+                  "gridColumnGap": 10,
+                  "gridTemplateColumns": "max-content 1fr",
+                }
+              }
+            >
+              <label
+                htmlFor="driverClassName"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Driver Class
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr max-content",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="driverClassName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value="org.hsqldb.jdbc.JDBCDriver"
+                />
+                <input
+                  className="theia-button"
+                  onClick={[Function]}
+                  type="button"
+                  value="Browse..."
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="url"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                URL
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="url"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value="jdbc:hsqldb:file:[PATH-TO-DATABASE-DIRECTORY]/[DATABASE-NAME]"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="username"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Username
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="username"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="password"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Password
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="password"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="password"
+                  value=""
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="xa"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Use two-phase commit protocol. This ensures data integrity when accessing multiple relational databases by coordinating them in a single transaction."
+              >
+                Use XA
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="xa"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="autoStart"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Automatically starts the database connection during Martini startup"
+              >
+                Auto Start
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="autoStart"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Collapsible"
+      >
+        <span
+          className="Collapsible__trigger is-open"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={null}
+          tabIndex={null}
+        >
+          Advanced Configuration
+        </span>
+        <div
+          className="Collapsible__contentOuter"
+          onTransitionEnd={[Function]}
+          style={
+            Object {
+              "WebkitTransition": "none",
+              "height": "auto",
+              "msTransition": "none",
+              "overflow": "hidden",
+              "transition": "none",
+            }
+          }
+        >
+          <div
+            className="Collapsible__contentInner"
+          >
+            <div
+              onFocus={[Function]}
+              style={
+                Object {
+                  "display": "grid",
+                  "gridColumnGap": 10,
+                  "gridTemplateColumns": "max-content 1fr",
+                }
+              }
+            >
+              <label
+                htmlFor="loginTimeout"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Login Timeout (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="loginTimeout"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="acquireIncrement"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how many connections are filled into the pool when the pool is empty but the 'Maximum Pool Size' value has not been reached."
+              >
+                Acquire Increment
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="acquireIncrement"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={1}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="acquisitionInterval"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how long the pool waits between attempts to create new connections."
+              >
+                Acquisition Interval (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="acquisitionInterval"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={1}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="acquisitionTimeout"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how long a request for a connection from the pool will block before being aborted (and an exception thrown)."
+              >
+                Acquisition Timeout (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="acquisitionTimeout"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={30}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="allowLocalTransactions"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Whether or not you want to be able to run SQL statements outside of XA transaction scope."
+              >
+                Allow Local Transactions
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="allowLocalTransactions"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="applyTransactionTimeout"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="If checked, the transaction timeout will be passed to the XAResource.setTransactionTimeout method."
+              >
+                Apply XA Transaction Timeout
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="applyTransactionTimeout"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="automaticEnlistingEnabled"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls whether connections from the PoolingDataSource are automatically enlisted/delisted into XA transactions."
+              >
+                Enlist to XA Automatically
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="automaticEnlistingEnabled"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="deferConnectionRelease"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Uncheck if the vendor's XADataSource implementation supports transactions interleaving."
+              >
+                Defer Connection Release
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="deferConnectionRelease"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="enableJdbc4ConnectionTest"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="If your JDBC driver supports JDBC4, this method of testing the connection is likely much more efficient than using the 'Test Query'. In the case of a test query, the query must be sent to the database server, parsed, and executed before the connection can be used. JDBC4 exposes a method by which a driver can make its own determination of connectivity (possibly whether the socket is still connected, etc.)."
+              >
+                Enable JDBC4 Connection Test
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="enableJdbc4ConnectionTest"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="ignoreRecoveryFailures"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Determines whether recovery errors are to be ignored or not. Ignoring recovery errors jeopardizes the failed transactions atomicity so only have this checked when you know what you're doing. This is mostly useful in a development environment."
+              >
+                Ignore Recovery Failures
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="ignoreRecoveryFailures"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="maxIdleTime"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="When the pool is above 'Minimum Pool Size', it controls how long an idle connection will stay in the pool before being retired. However, even if a connection is idle for longer than 'Maximum Idle Time', the connection will not be retired if it would bring the pool below the 'Minimum Pool Size' value."
+              >
+                Maximum Idle Time (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="maxIdleTime"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={60}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="isolationLevel"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Isolation Level
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <select
+                  className="theia-select"
+                  name="isolationLevel"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  value="READ_COMMITTED"
+                >
+                  <option
+                    value="READ_COMMITTED"
+                  >
+                    Read Committed
+                  </option>
+                  <option
+                    value="READ_UNCOMMITTED"
+                  >
+                    Read Uncommitted
+                  </option>
+                  <option
+                    value="REPEATABLE_READ"
+                  >
+                    Repeatable Read
+                  </option>
+                  <option
+                    value="SERIALIZABLE"
+                  >
+                    Serializable
+                  </option>
+                </select>
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="minPoolSize"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="The minimum number of active connections the pool will try to keep in the pool. In an idle system, the number of active connections will trend toward this value until it is reached. Connections that are retired and bring the pool below this value will be replenished until the minimum pool size is reached."
+              >
+                Minimum Pool Size
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="minPoolSize"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="maxPoolSize"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="The maximum number of active connections the pool will allow in the pool. If this maximum is reached, a request for a connection from the pool will block the calling thread until a connection is available or 'Acquisition Timeout' is reached."
+              >
+                Maximum Pool Size
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="maxPoolSize"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={5}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="preparedStatementCacheSize"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how many Prepared Statements are cached (per connection). A value of 0 means that statement caching is disabled."
+              >
+                Prepared Statement Cache Size
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="preparedStatementCacheSize"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="shareTransactionConnections"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="By default, whenever a thread requests a connection from the pool, Martini will issue a new connection. All connections issued are bound into the same transaction context. Depending on the design of your application, this behavior can result in a large number of connections to the database -- and in the case of a database such as PostgreSQL, which uses one process per-connection this places a fairly heavy burden on the database. Having it checked will enable a thread-associated connection cache. With this unchecked, no matter how many times a thread requests a connection from the DataSource, Martini will return a single connection. Because connections can be shared within the context of a transaction, this provides a more efficient use of connection resources. A positive benefit of a single connection per thread is that the prepared statement cache (which is per-connection) is also made more efficient. Lastly, another benefit is that because connections are shared within the same thread, the overhead of establishing and testing a new connection to the database is avoided, which significantly improves the performance of some access patterns. Of course, Martini will still ensure correctness whenever this is checked. While the default value of this property is false for backward compatibility, the recommended setting is to have this checked."
+              >
+                Share Transaction Connections
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="shareTransactionConnections"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="twoPcOrderingPosition"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls the position of this resource during the 2 phase commit protocol execution (used to guarantee the order of commits)."
+              >
+                Two-Phase Commit Order Position
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="twoPcOrderingPosition"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="uniqueName"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Required for crash recovery. Uses the name of the pool if empty."
+              >
+                Unique Name
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="uniqueName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="useTmJoin"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Uncheck if the vendor's XADataSource implementation does not implement XAResource.isSameRM() properly."
+              >
+                Use Transaction Manager Join
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="useTmJoin"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="uniqueName"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Required for crash recovery. Uses the name of the pool if empty."
+              >
+                Unique Name
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="uniqueName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="testQuery"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="If 'Enable JDBC4 Connection Test' is unchecked, this query is sent to the database to determine whether a connection is still usable instead."
+              >
+                Test Query
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <textarea
+                  className="theia-input"
+                  name="testQuery"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Editor should be rendered with new connection 1`] = `
+<div
+  className="sc-fzoLsD doYcQb"
+  tabIndex={-1}
+>
+  <div
+    className="sc-AxmLO rrKMc"
+  >
+    <div
+      className="martini-tree-icon martini-jdbc-icon"
+      style={
+        Object {
+          "marginRight": "4px",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="martini-stopped-overlay-icon"
+        style={
+          Object {
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "7px 8px",
+            "height": 8,
+            "position": "absolute",
+            "right": "0",
+            "top": "0",
+            "width": 7,
+          }
+        }
+      />
+    </div>
+    <div
+      className="title-wrapper"
+    >
+      <div
+        className="title"
+      >
+        JDBC
+         Connection - 
+        test
+      </div>
+    </div>
+    <div
+      className="sc-AxheI hUNGno"
+      style={
+        Object {
+          "gridTemplateColumns": "repeat(5, max-content)",
+          "height": undefined,
+        }
+      }
+    >
+      <button
+        className="theia-button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Test Configuration
+      </button>
+      <button
+        className="theia-button"
+        onClick={[Function]}
+      >
+        Revert
+      </button>
+      <div
+        className="item item-enabled"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+        title="Find (Ctrl+F)"
+      >
+        <div
+          className="martini-icon martini-search-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-start-icon disabled-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-stop-icon disabled-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <form
+      action="#"
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <div
+        className="Collapsible"
+      >
+        <span
+          className="Collapsible__trigger is-open"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={null}
+          tabIndex={null}
+        >
+          General Configuration
+        </span>
+        <div
+          className="Collapsible__contentOuter"
+          onTransitionEnd={[Function]}
+          style={
+            Object {
+              "WebkitTransition": "none",
+              "height": "auto",
+              "msTransition": "none",
+              "overflow": "hidden",
+              "transition": "none",
+            }
+          }
+        >
+          <div
+            className="Collapsible__contentInner"
+          >
+            <div
+              onFocus={[Function]}
+              style={
+                Object {
+                  "display": "grid",
+                  "gridColumnGap": 10,
+                  "gridTemplateColumns": "max-content 1fr",
+                }
+              }
+            >
+              <label
+                htmlFor="driverClassName"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Driver Class
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr max-content",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="driverClassName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value="org.hsqldb.jdbc.JDBCDriver"
+                />
+                <input
+                  className="theia-button"
+                  onClick={[Function]}
+                  type="button"
+                  value="Browse..."
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="url"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                URL
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="url"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value="jdbc:hsqldb:file:[PATH-TO-DATABASE-DIRECTORY]/[DATABASE-NAME]"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="username"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Username
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="username"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="password"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Password
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="password"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="password"
+                  value=""
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="xa"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Use two-phase commit protocol. This ensures data integrity when accessing multiple relational databases by coordinating them in a single transaction."
+              >
+                Use XA
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="xa"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="autoStart"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Automatically starts the database connection during Martini startup"
+              >
+                Auto Start
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="autoStart"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Collapsible"
+      >
+        <span
+          className="Collapsible__trigger is-open"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={null}
+          tabIndex={null}
+        >
+          Advanced Configuration
+        </span>
+        <div
+          className="Collapsible__contentOuter"
+          onTransitionEnd={[Function]}
+          style={
+            Object {
+              "WebkitTransition": "none",
+              "height": "auto",
+              "msTransition": "none",
+              "overflow": "hidden",
+              "transition": "none",
+            }
+          }
+        >
+          <div
+            className="Collapsible__contentInner"
+          >
+            <div
+              onFocus={[Function]}
+              style={
+                Object {
+                  "display": "grid",
+                  "gridColumnGap": 10,
+                  "gridTemplateColumns": "max-content 1fr",
+                }
+              }
+            >
+              <label
+                htmlFor="loginTimeout"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Login Timeout (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="loginTimeout"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="acquireIncrement"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how many connections are filled into the pool when the pool is empty but the 'Maximum Pool Size' value has not been reached."
+              >
+                Acquire Increment
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="acquireIncrement"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={1}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="acquisitionInterval"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how long the pool waits between attempts to create new connections."
+              >
+                Acquisition Interval (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="acquisitionInterval"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={1}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="acquisitionTimeout"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how long a request for a connection from the pool will block before being aborted (and an exception thrown)."
+              >
+                Acquisition Timeout (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="acquisitionTimeout"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={30}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="allowLocalTransactions"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Whether or not you want to be able to run SQL statements outside of XA transaction scope."
+              >
+                Allow Local Transactions
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="allowLocalTransactions"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="applyTransactionTimeout"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="If checked, the transaction timeout will be passed to the XAResource.setTransactionTimeout method."
+              >
+                Apply XA Transaction Timeout
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="applyTransactionTimeout"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="automaticEnlistingEnabled"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls whether connections from the PoolingDataSource are automatically enlisted/delisted into XA transactions."
+              >
+                Enlist to XA Automatically
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="automaticEnlistingEnabled"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="deferConnectionRelease"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Uncheck if the vendor's XADataSource implementation supports transactions interleaving."
+              >
+                Defer Connection Release
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="deferConnectionRelease"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="enableJdbc4ConnectionTest"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="If your JDBC driver supports JDBC4, this method of testing the connection is likely much more efficient than using the 'Test Query'. In the case of a test query, the query must be sent to the database server, parsed, and executed before the connection can be used. JDBC4 exposes a method by which a driver can make its own determination of connectivity (possibly whether the socket is still connected, etc.)."
+              >
+                Enable JDBC4 Connection Test
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="enableJdbc4ConnectionTest"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="ignoreRecoveryFailures"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Determines whether recovery errors are to be ignored or not. Ignoring recovery errors jeopardizes the failed transactions atomicity so only have this checked when you know what you're doing. This is mostly useful in a development environment."
+              >
+                Ignore Recovery Failures
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="ignoreRecoveryFailures"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="maxIdleTime"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="When the pool is above 'Minimum Pool Size', it controls how long an idle connection will stay in the pool before being retired. However, even if a connection is idle for longer than 'Maximum Idle Time', the connection will not be retired if it would bring the pool below the 'Minimum Pool Size' value."
+              >
+                Maximum Idle Time (seconds)
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="maxIdleTime"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={60}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="isolationLevel"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+              >
+                Isolation Level
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <select
+                  className="theia-select"
+                  name="isolationLevel"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  value="READ_COMMITTED"
+                >
+                  <option
+                    value="READ_COMMITTED"
+                  >
+                    Read Committed
+                  </option>
+                  <option
+                    value="READ_UNCOMMITTED"
+                  >
+                    Read Uncommitted
+                  </option>
+                  <option
+                    value="REPEATABLE_READ"
+                  >
+                    Repeatable Read
+                  </option>
+                  <option
+                    value="SERIALIZABLE"
+                  >
+                    Serializable
+                  </option>
+                </select>
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="minPoolSize"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="The minimum number of active connections the pool will try to keep in the pool. In an idle system, the number of active connections will trend toward this value until it is reached. Connections that are retired and bring the pool below this value will be replenished until the minimum pool size is reached."
+              >
+                Minimum Pool Size
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="minPoolSize"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="maxPoolSize"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="The maximum number of active connections the pool will allow in the pool. If this maximum is reached, a request for a connection from the pool will block the calling thread until a connection is available or 'Acquisition Timeout' is reached."
+              >
+                Maximum Pool Size
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="maxPoolSize"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={5}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="preparedStatementCacheSize"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls how many Prepared Statements are cached (per connection). A value of 0 means that statement caching is disabled."
+              >
+                Prepared Statement Cache Size
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="preparedStatementCacheSize"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="shareTransactionConnections"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="By default, whenever a thread requests a connection from the pool, Martini will issue a new connection. All connections issued are bound into the same transaction context. Depending on the design of your application, this behavior can result in a large number of connections to the database -- and in the case of a database such as PostgreSQL, which uses one process per-connection this places a fairly heavy burden on the database. Having it checked will enable a thread-associated connection cache. With this unchecked, no matter how many times a thread requests a connection from the DataSource, Martini will return a single connection. Because connections can be shared within the context of a transaction, this provides a more efficient use of connection resources. A positive benefit of a single connection per thread is that the prepared statement cache (which is per-connection) is also made more efficient. Lastly, another benefit is that because connections are shared within the same thread, the overhead of establishing and testing a new connection to the database is avoided, which significantly improves the performance of some access patterns. Of course, Martini will still ensure correctness whenever this is checked. While the default value of this property is false for backward compatibility, the recommended setting is to have this checked."
+              >
+                Share Transaction Connections
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  name="shareTransactionConnections"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="twoPcOrderingPosition"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Controls the position of this resource during the 2 phase commit protocol execution (used to guarantee the order of commits)."
+              >
+                Two-Phase Commit Order Position
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="twoPcOrderingPosition"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                  value={0}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="uniqueName"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Required for crash recovery. Uses the name of the pool if empty."
+              >
+                Unique Name
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="uniqueName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="useTmJoin"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Uncheck if the vendor's XADataSource implementation does not implement XAResource.isSameRM() properly."
+              >
+                Use Transaction Manager Join
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  checked={true}
+                  name="useTmJoin"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="uniqueName"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="Required for crash recovery. Uses the name of the pool if empty."
+              >
+                Unique Name
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <input
+                  className="theia-input"
+                  name="uniqueName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+              <label
+                htmlFor="testQuery"
+                onContextMenu={[Function]}
+                style={
+                  Object {
+                    "marginTop": "3px",
+                    "verticalAlign": "center",
+                  }
+                }
+                title="If 'Enable JDBC4 Connection Test' is unchecked, this query is sent to the database to determine whether a connection is still usable instead."
+              >
+                Test Query
+              </label>
+              <div
+                style={
+                  Object {
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr",
+                    "gridTemplateRows": "max-content 1fr",
+                  }
+                }
+              >
+                <textarea
+                  className="theia-input"
+                  name="testQuery"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                />
+                <div
+                  className="form-error-message-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

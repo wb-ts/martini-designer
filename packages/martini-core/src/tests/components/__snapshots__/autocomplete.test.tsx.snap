@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Autocomplete should be rendered 1`] = `
+<input
+  className="theia-input"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyUp={[Function]}
+  type="text"
+  value="test"
+/>
+`;
+
+exports[`Autocomplete should be rendered with given input styles 1`] = `
+<input
+  className="theia-input"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyUp={[Function]}
+  style={
+    Object {
+      "color": "red",
+    }
+  }
+  type="text"
+  value="test"
+/>
+`;

@@ -1,0 +1,23 @@
+{
+    "name": "observable",
+    "version": "0.0.0",
+    "files": [
+        "lib",
+        "src"
+    ],
+    "main": "lib/common/index.js",
+    "types": "lib/common/index.d.ts",
+    "devDependencies": {
+        "@types/jest": "^24.0.25",
+        "jest": "^26.6.3",
+        "rimraf": "latest",
+        "ts-jest": "^26.5.1",
+        "typescript": "latest"
+    },
+    "scripts": {
+        "prepare": "yarn run clean && yarn run build",
+        "clean": "rimraf lib",
+        "build": "tsc",
+        "watch": "tsc -w"
+    }
+}

@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RssEndpointForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      General Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="service"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The service to execute when the endpoint is triggered."
+          >
+            Service
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr max-content",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="service"
+              onBlur={[Function]}
+              onChange={[Function]}
+              readOnly={true}
+              type="text"
+              value=""
+            />
+            <input
+              className="theia-button"
+              type="button"
+              value="Browse..."
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="documentType"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The document type to be registered to Tracker when this endpoint is triggered."
+          >
+            Document Type
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr max-content",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="documentType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              readOnly={true}
+              type="text"
+              value="RSS"
+            />
+            <input
+              className="theia-button"
+              onClick={[Function]}
+              type="button"
+              value="Browse..."
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="enabled"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether or not the endpoint should be started automatically when the Martini package is started."
+          >
+            Auto Start
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="enabled"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="track"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Flag determining whether executions should be logged to Tracker."
+          >
+            Log to Tracker
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="track"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="replicated"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="If this endpoint is configured on a Martini instance that's running in a cluster, replicated will determine whether to run the endpoint on all instances, or only the elected leader node in the cluster. When this is checked, all instances will run the endpoint. When it's unchecked, only the leader node will run the endpoint."
+          >
+            Replicated
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="replicated"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      RSS Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="rssUrl"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The URL hosting the RSS feed."
+          >
+            URL
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="rssUrl"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="schedule"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The interval in seconds, at which Martini checks for changes in the RSS feed."
+          >
+            Polling Interval (seconds)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              min="1"
+              name="schedule"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value="1"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="onlyNew"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="When checked, only 'unread' entries in the RSS feed will be sent to the service."
+          >
+            Only New Entries
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="onlyNew"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;

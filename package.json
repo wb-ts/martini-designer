@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "scripts": {
+        "prepare": "lerna run prepare",
+        "rebuild:browser": "theia rebuild:browser",
+        "rebuild:electron": "theia rebuild:electron",
+        "download:plugins": "theia download:plugins"
+    },
+    "devDependencies": {
+        "bamboo-jest-reporter": "^1.0.3",
+        "identity-obj-proxy": "^3.0.0",
+        "lerna": "3.22.1",
+        "tslint": "^6.1.2",
+        "typescript": "^3.9.3"
+    },
+    "workspaces": [
+        "packages/*",
+        "browser-app",
+        "electron-app"
+    ],
+    "theiaPluginsDir": "plugins",
+    "theiaPlugins": {
+        "vscode-builtin-json": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/json-1.39.1-prel.vsix",
+        "vscode-builtin-groovy": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/groovy-1.39.1-prel.vsix",
+        "vscode-builtin-javascript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/javascript-1.39.1-prel.vsix",
+        "vscode-builtin-html": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/html-1.39.1-prel.vsix",
+        "vscode-builtin-xml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/xml-1.39.1-prel.vsix",
+        "vscode-builtin-yaml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/yaml-1.39.1-prel.vsix",
+        "vscode-builtin-md": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/markdown-1.39.1-prel.vsix",
+        "vscode-builtin-shellscript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/shellscript-1.39.1-prel.vsix",
+        "vscode-builtin-python": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/python-1.39.1-prel.vsix",
+        "vscode-builtin-ini": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/ini-1.39.1-prel.vsix"
+    }
+}

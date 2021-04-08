@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilePicker should be rendered 1`] = `
+<div
+  onDrop={[Function]}
+  style={
+    Object {
+      "display": "grid",
+      "gridTemplateColumns": "1fr max-content",
+    }
+  }
+>
+  <input
+    accept=".json,.xml,.yaml"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <input
+    className="theia-input"
+    onChange={[Function]}
+    placeholder="Test"
+    style={
+      Object {
+        "border": "",
+      }
+    }
+    type="text"
+    value=""
+  />
+  <input
+    className="theia-button"
+    onClick={[Function]}
+    type="button"
+    value="Browse..."
+  />
+</div>
+`;

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton should be rendered checked with label 1`] = `
+<div
+  className="sc-AxjAm bHDVdV"
+>
+  <input
+    checked={true}
+    onChange={[Function]}
+    type="radio"
+  />
+  <div
+    className="label"
+    onClick={[Function]}
+  >
+    Test
+  </div>
+</div>
+`;
+
+exports[`RadioButton should be rendered unchecked with label 1`] = `
+<div
+  className="sc-AxjAm bHDVdV"
+>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="radio"
+  />
+  <div
+    className="label"
+    onClick={[Function]}
+  >
+    Test
+  </div>
+</div>
+`;
+
+exports[`RadioButton should be rendered without label 1`] = `
+<input
+  onChange={[Function]}
+  type="radio"
+/>
+`;

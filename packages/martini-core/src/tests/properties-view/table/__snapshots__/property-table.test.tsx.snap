@@ -1,0 +1,404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyTable should be rendered with the descriptors 1`] = `
+<div
+  className="sc-AxirZ kdLRCK"
+>
+  <div
+    className="sc-AxjAm ljDiNr"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "200px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "60px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Property
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Value
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "60px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": "0 0 0 4px",
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              className="sc-AxiKw cSXCKF"
+              title="It's the first name, duh!"
+            >
+              First Name
+              <div
+                className="reset martini-tree-icon martini-reset-icon"
+                onClick={[Function]}
+                title="Reset to Default"
+              />
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              John
+            </div>
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "60px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": "0 0 0 4px",
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              className="sc-AxiKw cSXCKF"
+              title="C'mon, it's the last name, dude..."
+            >
+              Last Name
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              Doe
+            </div>
+          </div>
+        </div>
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "60px",
+            }
+          }
+        >
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": "0 0 0 4px",
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              className="sc-AxiKw cSXCKF"
+              title="C'est l'age, idiot."
+            >
+              Age
+            </div>
+          </div>
+          <div
+            className="td"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDoubleClick={[Function]}
+            role="cell"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": "4px",
+                }
+              }
+            >
+              30
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PropertyTable should be rendered without descriptors 1`] = `
+<div
+  className="sc-AxirZ kdLRCK"
+>
+  <div
+    className="sc-AxjAm ljDiNr"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="table"
+      role="table"
+      style={
+        Object {
+          "minWidth": "200px",
+        }
+      }
+    >
+      <div
+        className="thead"
+      >
+        <div
+          className="tr"
+          role="row"
+          style={
+            Object {
+              "display": "flex",
+              "flex": "1 0 auto",
+              "minWidth": "60px",
+            }
+          }
+        >
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Property
+            <div
+              className="resizer"
+              draggable={false}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              role="separator"
+              style={
+                Object {
+                  "cursor": "ew-resize",
+                }
+              }
+            />
+          </div>
+          <div
+            className="th"
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "display": "flex",
+                "flex": "100 0 auto",
+                "justifyContent": "flex-start",
+                "minWidth": "30px",
+                "overflow": "visible",
+                "padding": undefined,
+                "position": "relative",
+                "width": "100px",
+              }
+            }
+          >
+            Value
+          </div>
+        </div>
+      </div>
+      <div
+        className="tbody"
+      />
+    </div>
+  </div>
+</div>
+`;

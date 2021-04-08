@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor should be rendered with existing endpoint 1`] = `
+<div
+  className="sc-AxgMl jA-DMuo"
+  tabIndex={-1}
+>
+  <div
+    className="sc-AxhCb ilrYiD"
+  >
+    <div
+      className="martini-tree-icon martini-dir-watcher-endpoint-icon"
+      style={
+        Object {
+          "marginRight": "4px",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="martini-stopped-overlay-icon"
+        style={
+          Object {
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "7px 8px",
+            "height": 8,
+            "position": "absolute",
+            "right": "0",
+            "top": "0",
+            "width": 7,
+          }
+        }
+      />
+    </div>
+    <div
+      className="title-wrapper"
+    >
+      <div
+        className="title"
+      >
+        Directory Watcher
+         Connection - 
+        test
+      </div>
+    </div>
+    <div
+      className="sc-AxiKw bbpvGZ"
+      style={
+        Object {
+          "gridTemplateColumns": "repeat(5, max-content)",
+          "height": undefined,
+        }
+      }
+    >
+      <button
+        className="theia-button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Test Configuration
+      </button>
+      <button
+        className="theia-button"
+        onClick={[Function]}
+      >
+        Revert
+      </button>
+      <div
+        className="item item-enabled"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+        title="Find (Ctrl+F)"
+      >
+        <div
+          className="martini-icon martini-search-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item item-enabled"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-start-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-stop-icon disabled-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="content"
+  />
+</div>
+`;
+
+exports[`Editor should be rendered with new endpoint 1`] = `
+<div
+  className="sc-AxgMl jA-DMuo"
+  tabIndex={-1}
+>
+  <div
+    className="sc-AxhCb ilrYiD"
+  >
+    <div
+      className="martini-tree-icon martini-dir-watcher-endpoint-icon"
+      style={
+        Object {
+          "marginRight": "4px",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="martini-stopped-overlay-icon"
+        style={
+          Object {
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "7px 8px",
+            "height": 8,
+            "position": "absolute",
+            "right": "0",
+            "top": "0",
+            "width": 7,
+          }
+        }
+      />
+    </div>
+    <div
+      className="title-wrapper"
+    >
+      <div
+        className="title"
+      >
+        Directory Watcher
+         Connection - 
+        test
+      </div>
+    </div>
+    <div
+      className="sc-AxiKw bbpvGZ"
+      style={
+        Object {
+          "gridTemplateColumns": "repeat(5, max-content)",
+          "height": undefined,
+        }
+      }
+    >
+      <button
+        className="theia-button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Test Configuration
+      </button>
+      <button
+        className="theia-button"
+        onClick={[Function]}
+      >
+        Revert
+      </button>
+      <div
+        className="item item-enabled"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+        title="Find (Ctrl+F)"
+      >
+        <div
+          className="martini-icon martini-search-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-start-icon disabled-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="martini-icon martini-stop-icon disabled-icon"
+          style={
+            Object {
+              "width": "16px",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="content"
+  />
+</div>
+`;

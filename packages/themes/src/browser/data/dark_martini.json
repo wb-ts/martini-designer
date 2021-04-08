@@ -1,0 +1,14 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "Martini Dark",
+  "include": "./dark_plus.json",
+  "colors": {
+    "statusBar.background": "#9b59b6",
+    "statusBar.noFolderBackground": "#9b59b6",
+    "inputOption.activeBorder": "#9b59b6",
+    "button.background": "#9b59b6",
+    "focusBorder": "#9b59b6cc",
+    "errorForeground": "#E57373",
+    "list.activeSelectionBackground": "#82409dcc"
+  }
+}

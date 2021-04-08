@@ -1,0 +1,2013 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CassandraConnectionForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      General Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="name"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+          >
+            Name
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="name"
+              onBlur={[Function]}
+              onChange={[Function]}
+              readOnly={true}
+              type="text"
+              value="test"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="port"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+          >
+            Port
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="port"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={9042}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="ssl"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+          >
+            SSL
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="ssl"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="url"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+          >
+            URL
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="url"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="credentials.username"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The username to use when authenticating to the server."
+          >
+            Username
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="credentials.username"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="credentials.password"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The password to use when authenticating to the server."
+          >
+            Password
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="credentials.password"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="password"
+              value=""
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="autoStart"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+          >
+            Auto Start
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="autoStart"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="contactPoints"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Describes the contact points for a Cassandra cluster."
+          >
+            Contact Points
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <div
+              className="sc-AxgMl djATvu"
+              onKeyUp={[Function]}
+              style={
+                Object {
+                  "height": "150px",
+                  "minHeight": "150px",
+                }
+              }
+            >
+              <div
+                className="sc-AxhCb kivyIk"
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="table"
+                  role="table"
+                  style={
+                    Object {
+                      "minWidth": "100px",
+                    }
+                  }
+                >
+                  <div
+                    className="tbody"
+                  >
+                    <div
+                      className="tr"
+                      role="row"
+                      style={
+                        Object {
+                          "display": "flex",
+                          "flex": "1 0 auto",
+                          "minWidth": "30px",
+                        }
+                      }
+                    >
+                      <div
+                        className="td"
+                        onClick={[Function]}
+                        onContextMenu={[Function]}
+                        onDoubleClick={[Function]}
+                        role="cell"
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "boxSizing": "border-box",
+                            "display": "flex",
+                            "flex": "100 0 auto",
+                            "justifyContent": "flex-start",
+                            "minWidth": "30px",
+                            "overflow": "visible",
+                            "padding": undefined,
+                            "width": "100px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "paddingLeft": "4px",
+                            }
+                          }
+                        >
+                          point1
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="tr"
+                      role="row"
+                      style={
+                        Object {
+                          "display": "flex",
+                          "flex": "1 0 auto",
+                          "minWidth": "30px",
+                        }
+                      }
+                    >
+                      <div
+                        className="td"
+                        onClick={[Function]}
+                        onContextMenu={[Function]}
+                        onDoubleClick={[Function]}
+                        role="cell"
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "boxSizing": "border-box",
+                            "display": "flex",
+                            "flex": "100 0 auto",
+                            "justifyContent": "flex-start",
+                            "minWidth": "30px",
+                            "overflow": "visible",
+                            "padding": undefined,
+                            "width": "100px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "paddingLeft": "4px",
+                            }
+                          }
+                        >
+                          point2
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="tr"
+                      role="row"
+                      style={
+                        Object {
+                          "display": "flex",
+                          "flex": "1 0 auto",
+                          "minWidth": "30px",
+                        }
+                      }
+                    >
+                      <div
+                        className="td"
+                        onClick={[Function]}
+                        onContextMenu={[Function]}
+                        onDoubleClick={[Function]}
+                        role="cell"
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "boxSizing": "border-box",
+                            "display": "flex",
+                            "flex": "100 0 auto",
+                            "justifyContent": "flex-start",
+                            "minWidth": "30px",
+                            "overflow": "visible",
+                            "padding": undefined,
+                            "width": "100px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "paddingLeft": "4px",
+                            }
+                          }
+                        >
+                          point3
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="sc-AxhUy drFfyc"
+                onMouseDown={[Function]}
+                style={
+                  Object {
+                    "gridTemplateColumns": undefined,
+                    "height": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="item item-enabled"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseUp={[Function]}
+                  title="Add (Alt+A)"
+                >
+                  <div
+                    className="martini-icon martini-add-icon"
+                    style={
+                      Object {
+                        "width": "16px",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseUp={[Function]}
+                  title="Edit Choices (F2)"
+                >
+                  <div
+                    className="martini-icon martini-edit-icon disabled-icon"
+                    style={
+                      Object {
+                        "width": "16px",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseUp={[Function]}
+                  title="Delete (Delete)"
+                >
+                  <div
+                    className="martini-icon martini-delete-icon disabled-icon"
+                    style={
+                      Object {
+                        "width": "16px",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Advanced Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="maxSchemaAgreementWaitSeconds"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Sets the maximum time to wait for schema agreement before returning from a DDL query."
+          >
+            Max Schema Agreement Wait (seconds)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="maxSchemaAgreementWaitSeconds"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={10}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="compression"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The compression to use."
+          >
+            Compression
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <select
+              className="theia-select"
+              name="compression"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="NONE"
+            >
+              <option
+                value="NONE"
+              >
+                None
+              </option>
+              <option
+                value="SNAPPY"
+              >
+                Snappy
+              </option>
+              <option
+                value="LZ4"
+              >
+                Lz 4
+              </option>
+            </select>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="metrics"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to collect metrics."
+          >
+            Metrics
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="metrics"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Pooling Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="poolingOptions.coreConnectionsPerHostLocal"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The core number of connections per host in local."
+          >
+            Core Connections Per Host Local
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.coreConnectionsPerHostLocal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.coreConnectionsPerHostRemote"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The core number of connections per host in remote."
+          >
+            Core Connections Per Host Remote
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.coreConnectionsPerHostRemote"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.maxConnectionsPerHostLocal"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of connections per host in local."
+          >
+            Max Connections Per Host Local
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.maxConnectionsPerHostLocal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.maxConnectionsPerHostRemote"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of connections per host in remote."
+          >
+            Max Connections Per Host Remote
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.maxConnectionsPerHostRemote"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.newConnectionThresholdLocal"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The threshold that triggers the creation of a new connection to a host in local."
+          >
+            New Connection Threshold Local
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.newConnectionThresholdLocal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={800}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.newConnectionThresholdRemote"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The threshold that triggers the creation of a new connection to a host in remote."
+          >
+            New Connection Threshold Remote
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.newConnectionThresholdRemote"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={200}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.maxRequestsPerConnectionLocal"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of requests per connection in local."
+          >
+            Max Requests Per Connection Local
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.maxRequestsPerConnectionLocal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1024}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.maxRequestsPerConnectionRemote"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of requests per connection in remote."
+          >
+            Max Requests Per Connection Remote
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.maxRequestsPerConnectionRemote"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={256}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.idleTimeoutSeconds"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The timeout before an idle connection is removed in seconds."
+          >
+            Idle Timeout (seconds)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.idleTimeoutSeconds"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={120}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.poolTimeoutMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The timeout when trying to acquire a connection from a host's pool in milliseconds."
+          >
+            Pool Timeout (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.poolTimeoutMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={5000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.maxQueueSize"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of requests that enqueued if no connection is available."
+          >
+            Max Queue Size
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.maxQueueSize"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={256}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="poolingOptions.heartbeatIntervalSeconds"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The heart beat interval, after which a message is sent on an idle connection to make sure it's still alive."
+          >
+            Heartbeat Interval (seconds)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="poolingOptions.heartbeatIntervalSeconds"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={30}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Socket Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="socketOptions.connectTimeoutMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The connection timeout in milliseconds."
+          >
+            Connect Timeout (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="socketOptions.connectTimeoutMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={5000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.readTimeoutMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The per-host read timeout in milliseconds."
+          >
+            Read Timeout (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="socketOptions.readTimeoutMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={12000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.keepAlive"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to enable TCP keepalive."
+          >
+            Keep Alive
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="socketOptions.keepAlive"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.reuseAddress"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to enable reuse-address."
+          >
+            Reuse Address
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="socketOptions.reuseAddress"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.tcpNoDelay"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether to disable Nagle's algorithm."
+          >
+            TCP No Delay
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="socketOptions.tcpNoDelay"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.soLinger"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The linger-on-close timeout."
+          >
+            So Linger
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="socketOptions.soLinger"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={0}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.receiveBufferSize"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A hint to the size of the underlying buffers for incoming network I/O."
+          >
+            Receive Buffer Size
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="socketOptions.receiveBufferSize"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={0}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="socketOptions.sendBufferSize"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="A hint to the size of the underlying buffers for outgoing network I/O."
+          >
+            Send Buffer Size
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="socketOptions.sendBufferSize"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={0}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-closed"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Query Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "height 400ms linear",
+          "height": 0,
+          "msTransition": "height 400ms linear",
+          "overflow": "hidden",
+          "transition": "height 400ms linear",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="queryOptions.consistencyLevel"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default consistency level used by queries."
+          >
+            Consistency Level
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <select
+              className="theia-select"
+              name="queryOptions.consistencyLevel"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="LOCAL_ONE"
+            >
+              <option
+                value="ANY"
+              >
+                Any
+              </option>
+              <option
+                value="ONE"
+              >
+                One
+              </option>
+              <option
+                value="TWO"
+              >
+                Two
+              </option>
+              <option
+                value="THREE"
+              >
+                Three
+              </option>
+              <option
+                value="QUORUM"
+              >
+                Quorum
+              </option>
+              <option
+                value="ALL"
+              >
+                All
+              </option>
+              <option
+                value="LOCAL_QUORUM"
+              >
+                Local Quorum
+              </option>
+              <option
+                value="EACH_QUORUM"
+              >
+                Each Quorum
+              </option>
+              <option
+                value="SERIAL"
+              >
+                Serial
+              </option>
+              <option
+                value="LOCAL_SERIAL"
+              >
+                Local Serial
+              </option>
+              <option
+                value="LOCAL_ONE"
+              >
+                Local One
+              </option>
+            </select>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.serialConsistencyLevel"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default serial consistency level used by queries."
+          >
+            Serial Consistency Level
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <select
+              className="theia-select"
+              name="queryOptions.serialConsistencyLevel"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="SERIAL"
+            >
+              <option
+                value="ANY"
+              >
+                Any
+              </option>
+              <option
+                value="ONE"
+              >
+                One
+              </option>
+              <option
+                value="TWO"
+              >
+                Two
+              </option>
+              <option
+                value="THREE"
+              >
+                Three
+              </option>
+              <option
+                value="QUORUM"
+              >
+                Quorum
+              </option>
+              <option
+                value="ALL"
+              >
+                All
+              </option>
+              <option
+                value="LOCAL_QUORUM"
+              >
+                Local Quorum
+              </option>
+              <option
+                value="EACH_QUORUM"
+              >
+                Each Quorum
+              </option>
+              <option
+                value="SERIAL"
+              >
+                Serial
+              </option>
+              <option
+                value="LOCAL_SERIAL"
+              >
+                Local Serial
+              </option>
+              <option
+                value="LOCAL_ONE"
+              >
+                Local One
+              </option>
+            </select>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.fetchSize"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default fetch size used by queries."
+          >
+            Fetch Size
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.fetchSize"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={5000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.defaultIdempotence"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default idempotence for queries."
+          >
+            Default Idempotence
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="queryOptions.defaultIdempotence"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.prepareOnAllHosts"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether the driver should prepare statements on all hosts in the cluster."
+          >
+            Prepare On All Hosts
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="queryOptions.prepareOnAllHosts"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.reprepareOnUp"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether the driver should re-prepare all cached prepared statements on a host when it marks it back up."
+          >
+            Re-Prepare On Up
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="queryOptions.reprepareOnUp"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.refreshSchemaIntervalMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default window size in milliseconds used to debounce node list refresh requests."
+          >
+            Refresh Schema Interval (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.refreshSchemaIntervalMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.maxPendingRefreshSchemaRequests"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of schema refresh requests that the control connection can accumulate before executing them."
+          >
+            Max Pending Refresh Schema Requests
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.maxPendingRefreshSchemaRequests"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={20}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.refreshNodeListIntervalMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default window size in milliseconds used to debounce node list refresh requests."
+          >
+            Refresh Node List Interval (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.refreshNodeListIntervalMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.maxPendingRefreshNodeListRequests"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of node list refresh requests that the control connection can accumulate before executing them."
+          >
+            Max Pending Refresh NodeList Requests
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.maxPendingRefreshNodeListRequests"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={20}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.refreshNodeIntervalMillis"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The default window size in milliseconds used to debounce node refresh requests."
+          >
+            Refresh Node Interval (ms)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.refreshNodeIntervalMillis"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={1000}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="queryOptions.maxPendingRefreshNodeRequests"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The maximum number of node refresh requests that the control connection can accumulate before executing them."
+          >
+            Max Pending Refresh Node Requests
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content 1fr",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="queryOptions.maxPendingRefreshNodeRequests"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={20}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should return QuickOpenItemOptions 1`] = `
+Object {
+  "iconClass": undefined,
+  "label": "/test/code/Test.gloop",
+  "run": [Function],
+}
+`;

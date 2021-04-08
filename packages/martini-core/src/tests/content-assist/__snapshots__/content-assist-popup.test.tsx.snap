@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ContentAssistPopup 1`] = `
+<div
+  className="sc-AxiKw kaGcCU"
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+>
+  <input
+    className="theia-input"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Test..."
+    type="text"
+    value="Test"
+  />
+  <div
+    className="no-matches-label"
+  >
+    No matches
+  </div>
+  <div
+    className="footer"
+    onMouseDown={[Function]}
+  >
+    <div
+      className="apply-mode"
+    />
+    <i
+      className="codicon codicon-settings-gear settings"
+      onClick={[Function]}
+      title="Settings"
+    />
+  </div>
+</div>
+`;
