@@ -35,7 +35,6 @@ export class MartiniAccountManagerNode implements MartiniAccountManager {
     async set(name: string, password: string): Promise<void> {
         await this.ready;
         this.account = { name, password };
-        this.userStorage.saveContents(MartiniAccountManagerNode.STORAGE_PATH, JSON.stringify(this.account));
     }
 
     dispose(): void {}
