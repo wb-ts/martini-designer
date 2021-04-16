@@ -65,3 +65,7 @@ Or launch the `Start Electron Backend` in the `.vscode/launch.json` file.
 ## Watching for Changes
 
 To rebuild the packages when there is changes, run `lerna run --parallel watch` in the project root.
+
+## Using the Application
+
+Open http://localhost:3000 in your browser. The first time you open it you'll have the default Theia workspace layout. Close all the views/tabs and open the Martini Designer related views like Navigator, Properties, Input/Output and Mapper using the View menu in the top menu bar.
