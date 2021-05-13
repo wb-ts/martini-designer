@@ -15,6 +15,10 @@ Install npm and node.
 
     nvm install 12.14.1
     nvm use 12.14.1
+    
+### Install Theia Prerequisites
+
+See [here](https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#prerequisites).
 
 ### Install yarn and lerna
 
