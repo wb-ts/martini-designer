@@ -5,7 +5,7 @@ exports[`PropertyTable should be rendered with the descriptors 1`] = `
   className="sc-AxirZ kdLRCK"
 >
   <div
-    className="sc-AxjAm ljDiNr"
+    className="sc-AxjAm bGvKwa"
     onKeyDown={[Function]}
   >
     <div
@@ -313,7 +313,7 @@ exports[`PropertyTable should be rendered without descriptors 1`] = `
   className="sc-AxirZ kdLRCK"
 >
   <div
-    className="sc-AxjAm ljDiNr"
+    className="sc-AxjAm bGvKwa"
     onKeyDown={[Function]}
   >
     <div

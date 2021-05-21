@@ -2,7 +2,7 @@
 
 exports[`Table should be rendered with columns and rows 1`] = `
 <div
-  className="sc-AxjAm ljDiNr"
+  className="sc-AxjAm bGvKwa"
   onKeyDown={[Function]}
 >
   <div
@@ -373,7 +373,7 @@ exports[`Table should be rendered with columns and rows 1`] = `
 
 exports[`Table should be rendered with columns but no rows 1`] = `
 <div
-  className="sc-AxjAm ljDiNr"
+  className="sc-AxjAm bGvKwa"
   onKeyDown={[Function]}
 >
   <div
@@ -509,7 +509,7 @@ exports[`Table should be rendered with columns but no rows 1`] = `
 
 exports[`Table should be rendered with the given selected rows 1`] = `
 <div
-  className="sc-AxjAm ljDiNr"
+  className="sc-AxjAm bGvKwa"
   onKeyDown={[Function]}
 >
   <div

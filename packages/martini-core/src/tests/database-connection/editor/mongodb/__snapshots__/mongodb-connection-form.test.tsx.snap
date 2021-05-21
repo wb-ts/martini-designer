@@ -61,7 +61,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -96,7 +96,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -130,7 +130,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -163,7 +163,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -197,7 +197,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -254,7 +254,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -287,7 +287,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -363,12 +363,12 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
             <div
-              className="sc-Axmtr eYERhj"
+              className="sc-Axmtr iYSXFK"
               onKeyUp={[Function]}
               style={
                 Object {
@@ -378,7 +378,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               }
             >
               <div
-                className="sc-AxgMl jTvUNX"
+                className="sc-AxgMl johvju"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
@@ -426,13 +426,18 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
                         }
                       >
                         <div
-                          style={
-                            Object {
-                              "paddingLeft": "4px",
-                            }
-                          }
+                          className="cell"
                         >
-                          mongodb0.example.com:27017
+                          <span
+                            title="mongodb0.example.com:27017"
+                          >
+                            mongodb0.example.com:27017
+                          </span>
+                          <span
+                            className="edit-button martini-tree-icon martini-edit-icon"
+                            onClick={[Function]}
+                            title="Edit"
+                          />
                         </div>
                       </div>
                     </div>
@@ -468,13 +473,18 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
                         }
                       >
                         <div
-                          style={
-                            Object {
-                              "paddingLeft": "4px",
-                            }
-                          }
+                          className="cell"
                         >
-                          mongodb0.example.com:27018
+                          <span
+                            title="mongodb0.example.com:27018"
+                          >
+                            mongodb0.example.com:27018
+                          </span>
+                          <span
+                            className="edit-button martini-tree-icon martini-edit-icon"
+                            onClick={[Function]}
+                            title="Edit"
+                          />
                         </div>
                       </div>
                     </div>
@@ -514,7 +524,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
                   onMouseDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseUp={[Function]}
-                  title="Edit Choices (F2)"
+                  title="Edit (F2)"
                 >
                   <div
                     className="martini-icon martini-edit-icon disabled-icon"
@@ -566,7 +576,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -620,7 +630,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -654,7 +664,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -730,7 +740,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -764,7 +774,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -798,7 +808,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -832,7 +842,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -866,7 +876,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -900,7 +910,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -934,7 +944,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -968,7 +978,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1044,7 +1054,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1078,7 +1088,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1154,7 +1164,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1188,7 +1198,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1222,7 +1232,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1256,7 +1266,7 @@ exports[`MongoDbConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >

@@ -30,7 +30,7 @@ exports[`CreateEndpointForm should be rendered 1`] = `
       Object {
         "display": "grid",
         "gridTemplateColumns": "1fr",
-        "gridTemplateRows": "max-content 1fr",
+        "gridTemplateRows": "max-content max-content",
       }
     }
   >
@@ -68,7 +68,7 @@ exports[`CreateEndpointForm should be rendered 1`] = `
       Object {
         "display": "grid",
         "gridTemplateColumns": "1fr",
-        "gridTemplateRows": "max-content 1fr",
+        "gridTemplateRows": "max-content max-content",
       }
     }
   >
@@ -171,7 +171,7 @@ exports[`CreateEndpointForm should be rendered 1`] = `
       Object {
         "display": "grid",
         "gridTemplateColumns": "1fr max-content",
-        "gridTemplateRows": "max-content 1fr",
+        "gridTemplateRows": "max-content max-content",
       }
     }
   >

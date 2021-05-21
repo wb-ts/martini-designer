@@ -178,7 +178,9 @@ export class DefaultContentAssist implements ContentAssist {
 
     private render(props: ContentAssistProps) {
         ReactDOM.render(<ContentAssistPopup
-            proposalProviders={this.activeTemplateContext ? this.activeTemplateContext.proposalProviders : this.proposalProviders}
+            proposalProviders={this.activeTemplateContext ?
+                this.activeTemplateContext.proposalProviders :
+                props.proposalProviderOverrides || this.proposalProviders}
             defaultSearch={props.search}
             searchPlaceholder={props.searchPlaceholder}
             onApply={e => this.handleApply(e)}

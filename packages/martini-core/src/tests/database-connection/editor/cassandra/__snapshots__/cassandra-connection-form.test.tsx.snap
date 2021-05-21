@@ -61,7 +61,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -95,7 +95,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -128,7 +128,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -161,7 +161,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -194,7 +194,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -228,7 +228,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -261,7 +261,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -295,12 +295,12 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
             <div
-              className="sc-AxgMl djATvu"
+              className="sc-AxgMl hWpnZH"
               onKeyUp={[Function]}
               style={
                 Object {
@@ -310,7 +310,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               }
             >
               <div
-                className="sc-AxhCb kivyIk"
+                className="sc-AxhCb gNdnDd"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
@@ -358,13 +358,18 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
                         }
                       >
                         <div
-                          style={
-                            Object {
-                              "paddingLeft": "4px",
-                            }
-                          }
+                          className="cell"
                         >
-                          point1
+                          <span
+                            title="point1"
+                          >
+                            point1
+                          </span>
+                          <span
+                            className="edit-button martini-tree-icon martini-edit-icon"
+                            onClick={[Function]}
+                            title="Edit"
+                          />
                         </div>
                       </div>
                     </div>
@@ -400,13 +405,18 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
                         }
                       >
                         <div
-                          style={
-                            Object {
-                              "paddingLeft": "4px",
-                            }
-                          }
+                          className="cell"
                         >
-                          point2
+                          <span
+                            title="point2"
+                          >
+                            point2
+                          </span>
+                          <span
+                            className="edit-button martini-tree-icon martini-edit-icon"
+                            onClick={[Function]}
+                            title="Edit"
+                          />
                         </div>
                       </div>
                     </div>
@@ -442,13 +452,18 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
                         }
                       >
                         <div
-                          style={
-                            Object {
-                              "paddingLeft": "4px",
-                            }
-                          }
+                          className="cell"
                         >
-                          point3
+                          <span
+                            title="point3"
+                          >
+                            point3
+                          </span>
+                          <span
+                            className="edit-button martini-tree-icon martini-edit-icon"
+                            onClick={[Function]}
+                            title="Edit"
+                          />
                         </div>
                       </div>
                     </div>
@@ -488,7 +503,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
                   onMouseDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseUp={[Function]}
-                  title="Edit Choices (F2)"
+                  title="Edit (F2)"
                 >
                   <div
                     className="martini-icon martini-edit-icon disabled-icon"
@@ -582,7 +597,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -616,7 +631,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -665,7 +680,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -741,7 +756,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -775,7 +790,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -809,7 +824,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -843,7 +858,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -877,7 +892,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -911,7 +926,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -945,7 +960,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -979,7 +994,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1013,7 +1028,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1047,7 +1062,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1081,7 +1096,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1115,7 +1130,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1191,7 +1206,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1225,7 +1240,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1259,7 +1274,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1293,7 +1308,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1327,7 +1342,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1361,7 +1376,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1395,7 +1410,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1429,7 +1444,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1505,7 +1520,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1594,7 +1609,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1683,7 +1698,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1717,7 +1732,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1751,7 +1766,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1785,7 +1800,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1819,7 +1834,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1853,7 +1868,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1887,7 +1902,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1921,7 +1936,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1955,7 +1970,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >
@@ -1989,7 +2004,7 @@ exports[`CassandraConnectionForm should be rendered 1`] = `
               Object {
                 "display": "grid",
                 "gridTemplateColumns": "1fr",
-                "gridTemplateRows": "max-content 1fr",
+                "gridTemplateRows": "max-content max-content",
               }
             }
           >

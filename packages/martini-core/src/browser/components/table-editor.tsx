@@ -10,6 +10,7 @@ const Styles = styled.div`
     display: grid;
     grid-template-columns: 1fr max-content;
     grid-column-gap: 4px;
+    overflow: hidden;
 
     > div {
         outline: none;
@@ -21,15 +22,43 @@ const Styles = styled.div`
             background-color: var(--theia-input-background);
         }
     }
+
+    .cell {
+        padding-left: 4px;
+        width: 100%;
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        .edit-button {
+            visibility: hidden;
+            position: absolute;
+            filter: drop-shadow(0px 0px 1px black);
+            cursor: pointer;
+            right: 0;
+        }
+
+        :hover {
+            .edit-button {
+                visibility: visible;
+            }
+        }
+    }
 `;
+
 export type TableEditorColumn<T> = TableColumn & {
     cellEditor?: CellEditorProvider<T>;
-    alwaysShowCellEditor?: boolean;
+    onEditButtonPress?: (rowIndex: number, value: any) => Promise<void>;
 };
 
 export namespace TableEditorColumn {
     export function is(object: object): object is TableEditorColumn<any> {
-        return !!object && "cellEditor" in object;
+        return !!object && ("cellEditor" in object || "onEditButtonPress" in object);
+    }
+
+    export function isEditable(column: TableEditorColumn<any>): column is TableEditorColumn<any> {
+        return column.cellEditor !== undefined || column.onEditButtonPress !== undefined;
     }
 }
 
@@ -59,9 +88,10 @@ export const TableEditor: React.FC<TableEditorProps> = ({
 
     const handleAdd = async () => {
         if (onAdd) {
+            const length = tableProps.data.length;
             const result = await onAdd();
             if (result) {
-                setSelectedRows([tableProps.data.length - 1]);
+                setSelectedRows([length]);
                 setTimeout(() => {
                     if (typeof result === "string")
                         handleEdit(result);
@@ -110,13 +140,32 @@ export const TableEditor: React.FC<TableEditorProps> = ({
     };
 
     const handleCellDoubleClick = (e: CellClickEvent) => {
-        setEditedColumnId(e.columnId);
+        const column = tableProps.columns.find(col => col.id === e.columnId);
+        if (column && TableEditorColumn.is(column) && column.onEditButtonPress) {
+            e.mouseEvent.stopPropagation();
+            e.mouseEvent.preventDefault();
+            handleEditButtonClick(column, e.rowIndex, e.value);
+        }
+        else if (column && TableEditorColumn.is(column) && column.cellEditor) {
+            e.mouseEvent.stopPropagation();
+            e.mouseEvent.preventDefault();
+            setEditedColumnId(e.columnId);
+        }
     };
 
     const handleSelectionChange = (selectedRows: number[]) => {
         setSelectedRows(selectedRows);
         if (onSelectionChange)
             onSelectionChange(selectedRows);
+    };
+
+    const handleEditButtonClick = async (column: TableEditorColumn<any>, row: number, value: any) => {
+        if (column.onEditButtonPress) {
+            await column.onEditButtonPress(row, value);
+            tableRef.current?.focus();
+        }
+        else
+            handleEdit(column.id);
     };
 
     const proxiedColumns = tableProps.columns.map(column => {
@@ -143,7 +192,18 @@ export const TableEditor: React.FC<TableEditorProps> = ({
                         }
                     });
 
-                return <div style={{ paddingLeft: "4px" }}>{props.value}</div>;
+                return <div className="cell">
+                    {props.value ? <span title={props.value}>{props.value}</span> : <span>&nbsp;</span>}
+                    {
+                        TableEditorColumn.is(column) &&
+                        TableEditorColumn.isEditable(column) &&
+                        <span
+                            className="edit-button martini-tree-icon martini-edit-icon"
+                            title={messages.edit}
+                            onClick={() => handleEditButtonClick(column, props.row.index, props.value)}
+                        />
+                    }
+                </div>;
             }
         };
 
@@ -167,11 +227,11 @@ export const TableEditor: React.FC<TableEditorProps> = ({
                 onClick={handleAdd}
                 tooltip={`${messages.add} (${CommandRegistry.formatKeystroke("Alt A")})`}
             />}
-            {onEdit && <ToolBarItem
+            {(onEdit && tableProps.columns.length === 1) && <ToolBarItem
                 iconClass="martini-edit-icon"
                 onClick={() => handleEdit()}
                 enabled={tableProps.data.length > 0 && selectedRows.length > 0}
-                tooltip={`${messages.edit_choices_title} (${CommandRegistry.formatKeystroke("F2")})`}
+                tooltip={`${messages.edit} (${CommandRegistry.formatKeystroke("F2")})`}
             />}
             {onDelete && <ToolBarItem
                 iconClass="martini-delete-icon"

@@ -1,4 +1,5 @@
 import { UndoableOperation } from "./history-manager";
+import { set } from "lodash";
 
 export class BatchOperation implements UndoableOperation {
     constructor(readonly name: string | undefined, readonly operations: UndoableOperation[]) {}
@@ -101,10 +102,10 @@ export class SetPropertyOperation implements UndoableOperation {
     }
 
     undo(): void {
-        this.target[this.property] = this.oldValue;
+        set(this.target, this.property, this.oldValue);
     }
 
     redo(): void {
-        this.target[this.property] = this.value;
+        set(this.target, this.property, this.value);
     }
 }

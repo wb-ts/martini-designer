@@ -299,7 +299,7 @@ export class BaseTreeModel extends TreeModelImpl {
                 .forEach((node: DataTreeNode) => {
                     this.refresh(node);
                 });
-        } else this.refreshElement(e);
+        } else if (e) this.refreshElement(e);
     }
 
     private async internalExpandNode(node: DataTreeNode, predicate: (element: any) => boolean): Promise<void> {

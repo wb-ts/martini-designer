@@ -2,11 +2,11 @@
 
 exports[`TableEditor should be rendered with add toolbar item 1`] = `
 <div
-  className="sc-AxgMl djATvu"
+  className="sc-AxgMl hWpnZH"
   onKeyUp={[Function]}
 >
   <div
-    className="sc-AxhCb kivyIk"
+    className="sc-AxhCb gNdnDd"
     onKeyDown={[Function]}
     tabIndex={0}
   >
@@ -202,13 +202,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              1
+              <span
+                title={1}
+              >
+                1
+              </span>
             </div>
           </div>
           <div
@@ -232,13 +232,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Luther
+              <span
+                title="Luther"
+              >
+                Luther
+              </span>
             </div>
           </div>
           <div
@@ -262,13 +262,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Super Strength
+              <span
+                title="Super Strength"
+              >
+                Super Strength
+              </span>
             </div>
           </div>
           <div
@@ -292,12 +292,17 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -332,13 +337,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              2
+              <span
+                title={2}
+              >
+                2
+              </span>
             </div>
           </div>
           <div
@@ -362,13 +367,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Diego
+              <span
+                title="Diego"
+              >
+                Diego
+              </span>
             </div>
           </div>
           <div
@@ -392,13 +397,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Perfect Aim
+              <span
+                title="Perfect Aim"
+              >
+                Perfect Aim
+              </span>
             </div>
           </div>
           <div
@@ -422,12 +427,17 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -462,13 +472,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              3
+              <span
+                title={3}
+              >
+                3
+              </span>
             </div>
           </div>
           <div
@@ -492,13 +502,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Allison
+              <span
+                title="Allison"
+              >
+                Allison
+              </span>
             </div>
           </div>
           <div
@@ -522,13 +532,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Mind Control
+              <span
+                title="Mind Control"
+              >
+                Mind Control
+              </span>
             </div>
           </div>
           <div
@@ -552,12 +562,17 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -592,13 +607,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              4
+              <span
+                title={4}
+              >
+                4
+              </span>
             </div>
           </div>
           <div
@@ -622,13 +637,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Klaus
+              <span
+                title="Klaus"
+              >
+                Klaus
+              </span>
             </div>
           </div>
           <div
@@ -652,13 +667,13 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Speak to the Dead
+              <span
+                title="Speak to the Dead"
+              >
+                Speak to the Dead
+              </span>
             </div>
           </div>
           <div
@@ -682,12 +697,17 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -726,11 +746,11 @@ exports[`TableEditor should be rendered with add toolbar item 1`] = `
 
 exports[`TableEditor should be rendered with delete toolbar item 1`] = `
 <div
-  className="sc-AxgMl djATvu"
+  className="sc-AxgMl hWpnZH"
   onKeyUp={[Function]}
 >
   <div
-    className="sc-AxhCb kivyIk"
+    className="sc-AxhCb gNdnDd"
     onKeyDown={[Function]}
     tabIndex={0}
   >
@@ -926,13 +946,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              1
+              <span
+                title={1}
+              >
+                1
+              </span>
             </div>
           </div>
           <div
@@ -956,13 +976,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Luther
+              <span
+                title="Luther"
+              >
+                Luther
+              </span>
             </div>
           </div>
           <div
@@ -986,13 +1006,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Super Strength
+              <span
+                title="Super Strength"
+              >
+                Super Strength
+              </span>
             </div>
           </div>
           <div
@@ -1016,12 +1036,17 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -1056,13 +1081,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              2
+              <span
+                title={2}
+              >
+                2
+              </span>
             </div>
           </div>
           <div
@@ -1086,13 +1111,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Diego
+              <span
+                title="Diego"
+              >
+                Diego
+              </span>
             </div>
           </div>
           <div
@@ -1116,13 +1141,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Perfect Aim
+              <span
+                title="Perfect Aim"
+              >
+                Perfect Aim
+              </span>
             </div>
           </div>
           <div
@@ -1146,12 +1171,17 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -1186,13 +1216,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              3
+              <span
+                title={3}
+              >
+                3
+              </span>
             </div>
           </div>
           <div
@@ -1216,13 +1246,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Allison
+              <span
+                title="Allison"
+              >
+                Allison
+              </span>
             </div>
           </div>
           <div
@@ -1246,13 +1276,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Mind Control
+              <span
+                title="Mind Control"
+              >
+                Mind Control
+              </span>
             </div>
           </div>
           <div
@@ -1276,12 +1306,17 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -1316,13 +1351,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              4
+              <span
+                title={4}
+              >
+                4
+              </span>
             </div>
           </div>
           <div
@@ -1346,13 +1381,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Klaus
+              <span
+                title="Klaus"
+              >
+                Klaus
+              </span>
             </div>
           </div>
           <div
@@ -1376,13 +1411,13 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Speak to the Dead
+              <span
+                title="Speak to the Dead"
+              >
+                Speak to the Dead
+              </span>
             </div>
           </div>
           <div
@@ -1406,12 +1441,17 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -1450,11 +1490,11 @@ exports[`TableEditor should be rendered with delete toolbar item 1`] = `
 
 exports[`TableEditor should be rendered with edit toolbar item 1`] = `
 <div
-  className="sc-AxgMl djATvu"
+  className="sc-AxgMl hWpnZH"
   onKeyUp={[Function]}
 >
   <div
-    className="sc-AxhCb kivyIk"
+    className="sc-AxhCb gNdnDd"
     onKeyDown={[Function]}
     tabIndex={0}
   >
@@ -1650,13 +1690,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              1
+              <span
+                title={1}
+              >
+                1
+              </span>
             </div>
           </div>
           <div
@@ -1680,13 +1720,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Luther
+              <span
+                title="Luther"
+              >
+                Luther
+              </span>
             </div>
           </div>
           <div
@@ -1710,13 +1750,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Super Strength
+              <span
+                title="Super Strength"
+              >
+                Super Strength
+              </span>
             </div>
           </div>
           <div
@@ -1740,12 +1780,17 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -1780,13 +1825,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              2
+              <span
+                title={2}
+              >
+                2
+              </span>
             </div>
           </div>
           <div
@@ -1810,13 +1855,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Diego
+              <span
+                title="Diego"
+              >
+                Diego
+              </span>
             </div>
           </div>
           <div
@@ -1840,13 +1885,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Perfect Aim
+              <span
+                title="Perfect Aim"
+              >
+                Perfect Aim
+              </span>
             </div>
           </div>
           <div
@@ -1870,12 +1915,17 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -1910,13 +1960,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              3
+              <span
+                title={3}
+              >
+                3
+              </span>
             </div>
           </div>
           <div
@@ -1940,13 +1990,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Allison
+              <span
+                title="Allison"
+              >
+                Allison
+              </span>
             </div>
           </div>
           <div
@@ -1970,13 +2020,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Mind Control
+              <span
+                title="Mind Control"
+              >
+                Mind Control
+              </span>
             </div>
           </div>
           <div
@@ -2000,12 +2050,17 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -2040,13 +2095,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              4
+              <span
+                title={4}
+              >
+                4
+              </span>
             </div>
           </div>
           <div
@@ -2070,13 +2125,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Klaus
+              <span
+                title="Klaus"
+              >
+                Klaus
+              </span>
             </div>
           </div>
           <div
@@ -2100,13 +2155,13 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Speak to the Dead
+              <span
+                title="Speak to the Dead"
+              >
+                Speak to the Dead
+              </span>
             </div>
           </div>
           <div
@@ -2130,12 +2185,17 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -2150,35 +2210,17 @@ exports[`TableEditor should be rendered with edit toolbar item 1`] = `
         "height": "fit-content",
       }
     }
-  >
-    <div
-      className="item"
-      onClick={[Function]}
-      onMouseDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseUp={[Function]}
-      title="Edit Choices (F2)"
-    >
-      <div
-        className="martini-icon martini-edit-icon disabled-icon"
-        style={
-          Object {
-            "width": "16px",
-          }
-        }
-      />
-    </div>
-  </div>
+  />
 </div>
 `;
 
 exports[`TableEditor should be rendered with toolbar 1`] = `
 <div
-  className="sc-AxgMl djATvu"
+  className="sc-AxgMl hWpnZH"
   onKeyUp={[Function]}
 >
   <div
-    className="sc-AxhCb kivyIk"
+    className="sc-AxhCb gNdnDd"
     onKeyDown={[Function]}
     tabIndex={0}
   >
@@ -2374,13 +2416,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              1
+              <span
+                title={1}
+              >
+                1
+              </span>
             </div>
           </div>
           <div
@@ -2404,13 +2446,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Luther
+              <span
+                title="Luther"
+              >
+                Luther
+              </span>
             </div>
           </div>
           <div
@@ -2434,13 +2476,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Super Strength
+              <span
+                title="Super Strength"
+              >
+                Super Strength
+              </span>
             </div>
           </div>
           <div
@@ -2464,12 +2506,17 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -2504,13 +2551,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              2
+              <span
+                title={2}
+              >
+                2
+              </span>
             </div>
           </div>
           <div
@@ -2534,13 +2581,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Diego
+              <span
+                title="Diego"
+              >
+                Diego
+              </span>
             </div>
           </div>
           <div
@@ -2564,13 +2611,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Perfect Aim
+              <span
+                title="Perfect Aim"
+              >
+                Perfect Aim
+              </span>
             </div>
           </div>
           <div
@@ -2594,12 +2641,17 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -2634,13 +2686,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              3
+              <span
+                title={3}
+              >
+                3
+              </span>
             </div>
           </div>
           <div
@@ -2664,13 +2716,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Allison
+              <span
+                title="Allison"
+              >
+                Allison
+              </span>
             </div>
           </div>
           <div
@@ -2694,13 +2746,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Mind Control
+              <span
+                title="Mind Control"
+              >
+                Mind Control
+              </span>
             </div>
           </div>
           <div
@@ -2724,12 +2776,17 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -2764,13 +2821,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              4
+              <span
+                title={4}
+              >
+                4
+              </span>
             </div>
           </div>
           <div
@@ -2794,13 +2851,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Klaus
+              <span
+                title="Klaus"
+              >
+                Klaus
+              </span>
             </div>
           </div>
           <div
@@ -2824,13 +2881,13 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Speak to the Dead
+              <span
+                title="Speak to the Dead"
+              >
+                Speak to the Dead
+              </span>
             </div>
           </div>
           <div
@@ -2854,12 +2911,17 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -2898,23 +2960,6 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
       onMouseDown={[Function]}
       onMouseOut={[Function]}
       onMouseUp={[Function]}
-      title="Edit Choices (F2)"
-    >
-      <div
-        className="martini-icon martini-edit-icon disabled-icon"
-        style={
-          Object {
-            "width": "16px",
-          }
-        }
-      />
-    </div>
-    <div
-      className="item"
-      onClick={[Function]}
-      onMouseDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseUp={[Function]}
       title="Delete (Delete)"
     >
       <div
@@ -2932,11 +2977,11 @@ exports[`TableEditor should be rendered with toolbar 1`] = `
 
 exports[`TableEditor should be rendered without toolbar 1`] = `
 <div
-  className="sc-AxgMl djATvu"
+  className="sc-AxgMl hWpnZH"
   onKeyUp={[Function]}
 >
   <div
-    className="sc-AxhCb kivyIk"
+    className="sc-AxhCb gNdnDd"
     onKeyDown={[Function]}
     tabIndex={0}
   >
@@ -3132,13 +3177,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              1
+              <span
+                title={1}
+              >
+                1
+              </span>
             </div>
           </div>
           <div
@@ -3162,13 +3207,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Luther
+              <span
+                title="Luther"
+              >
+                Luther
+              </span>
             </div>
           </div>
           <div
@@ -3192,13 +3237,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Super Strength
+              <span
+                title="Super Strength"
+              >
+                Super Strength
+              </span>
             </div>
           </div>
           <div
@@ -3222,12 +3267,17 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -3262,13 +3312,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              2
+              <span
+                title={2}
+              >
+                2
+              </span>
             </div>
           </div>
           <div
@@ -3292,13 +3342,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Diego
+              <span
+                title="Diego"
+              >
+                Diego
+              </span>
             </div>
           </div>
           <div
@@ -3322,13 +3372,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Perfect Aim
+              <span
+                title="Perfect Aim"
+              >
+                Perfect Aim
+              </span>
             </div>
           </div>
           <div
@@ -3352,12 +3402,17 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -3392,13 +3447,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              3
+              <span
+                title={3}
+              >
+                3
+              </span>
             </div>
           </div>
           <div
@@ -3422,13 +3477,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Allison
+              <span
+                title="Allison"
+              >
+                Allison
+              </span>
             </div>
           </div>
           <div
@@ -3452,13 +3507,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Mind Control
+              <span
+                title="Mind Control"
+              >
+                Mind Control
+              </span>
             </div>
           </div>
           <div
@@ -3482,12 +3537,17 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -3522,13 +3582,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              4
+              <span
+                title={4}
+              >
+                4
+              </span>
             </div>
           </div>
           <div
@@ -3552,13 +3612,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Klaus
+              <span
+                title="Klaus"
+              >
+                Klaus
+              </span>
             </div>
           </div>
           <div
@@ -3582,13 +3642,13 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
+              className="cell"
             >
-              Speak to the Dead
+              <span
+                title="Speak to the Dead"
+              >
+                Speak to the Dead
+              </span>
             </div>
           </div>
           <div
@@ -3612,12 +3672,17 @@ exports[`TableEditor should be rendered without toolbar 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": "4px",
-                }
-              }
-            />
+              className="cell"
+            >
+              <span>
+                 
+              </span>
+              <span
+                className="edit-button martini-tree-icon martini-edit-icon"
+                onClick={[Function]}
+                title="Edit"
+              />
+            </div>
           </div>
         </div>
       </div>

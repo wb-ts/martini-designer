@@ -5,7 +5,7 @@ import { noop } from "lodash";
 import messages from "martini-messages/lib/messages";
 import * as React from "react";
 import * as Yup from "yup";
-import { codeDirRegExp, codeDirResourceRegExp } from "../../../common/fs/file-util";
+import { codeDirRegExp, codeDirResourceRegExp, packageDirRegExp } from "../../../common/fs/file-util";
 import { Directory, Resource } from "../../../common/fs/martini-filesystem";
 import { UpDownLabel } from "../../components/up-down-label";
 import { FormRow, OnFormChange, validateSchemaAsync } from "../../form/form";
@@ -320,6 +320,12 @@ export class DefaultCodeFileWizard extends DefaultFileWizard {
         protected readonly page: CodeFileWizardPage) {
         super(props, page);
     }
+
+    async init(progress: Progress): Promise<void> {
+        await super.init(progress);
+        if (packageDirRegExp.test(this.page.defaultLocation))
+            this.page.defaultLocation += "/code";
+    }
 }
 
 export type DefaultCodeFileWizardFactory = (props: Partial<DefaultFileWizardProps>) => DefaultCodeFileWizard;
@@ -359,6 +365,7 @@ export abstract class AbstractCodeFileWizardContribution implements WizardContri
         const targetDirectoryPath = this.wizardHelper.getTargetDirectoryPath();
         return targetDirectoryPath !== undefined &&
             (codeDirRegExp.test(targetDirectoryPath) ||
-                codeDirResourceRegExp.test(targetDirectoryPath));
+                codeDirResourceRegExp.test(targetDirectoryPath) ||
+                packageDirRegExp.test(targetDirectoryPath));
     }
 }

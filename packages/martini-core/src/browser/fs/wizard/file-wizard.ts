@@ -20,6 +20,7 @@ export class FileWizardContribution implements WizardContribution {
     readonly iconClass = "martini-icon martini-file-icon";
     readonly keybinding = "ctrlcmd+alt+n i";
     readonly primary = true;
+    readonly menuGroup = "5_misc"
 
     async createWizard(): Promise<Wizard> {
         return this.fileWizardFactory({

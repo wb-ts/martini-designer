@@ -1,8 +1,8 @@
 import { MaybePromise } from "@theia/core";
+import messages from "martini-messages/lib/messages";
 import * as React from "react";
 import { OverlayIconProps } from "../components/icon-overlay";
 import { HistoryManager } from "../history/history-manager";
-import messages from "martini-messages/lib/messages";
 
 export interface ContentAssist {
     enabled: boolean;
@@ -14,6 +14,7 @@ export interface ContentAssist {
 export interface ContentAssistProps {
     searchPlaceholder?: string;
     search?: string;
+    proposalProviderOverrides?: ContentProposalProvider[];
 }
 
 export type Selection = any[];

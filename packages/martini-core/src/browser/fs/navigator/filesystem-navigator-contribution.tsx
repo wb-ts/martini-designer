@@ -1,20 +1,22 @@
 import URI from "@theia/core/lib/common/uri";
 import { inject, injectable, postConstruct } from "inversify";
 import * as React from "react";
-import { Directory, MartiniFileSystem, Resource } from "../../common/fs/martini-filesystem";
-import { PartialMartiniPackage } from "../../common/package/martini-package-manager";
+import { codeDirResourceRegExp, withoutFileExtension } from "../../../common/fs/file-util";
+import { Directory, MartiniFileSystem, Resource } from "../../../common/fs/martini-filesystem";
+import { PartialMartiniPackage } from "../../../common/package/martini-package-manager";
 import {
     NavigatorContentProviderContribution,
     NavigatorLabelProviderContribution,
     NavigatorOpenHandler
-} from "../navigator/martini-navigator-view-widget";
+} from "../../navigator/martini-navigator-view-widget";
 import {
     AbstractTreeContentProvider,
     AbstractTreeLabelProvider,
     OverlayIcon,
     RefreshContentEvent
-} from "../tree/base-tree";
-import { MartiniFileEventDispatcher } from "./martini-filesystem-event-dispatcher";
+} from "../../tree/base-tree";
+import { MartiniFileEventDispatcher } from "../martini-filesystem-event-dispatcher";
+import { FilesystemPreferences } from "../pref/filesystem-preferences";
 
 @injectable()
 export class FileSystemNavigatorContentProvider
@@ -55,7 +57,11 @@ export class FileSystemNavigatorContentProvider
         if (PartialMartiniPackage.is(parent)) {
             const packageName = parent.name;
             const resource = await this.fileSystem.get(`/${packageName}`);
-            if (Directory.is(resource)) return resource.children;
+            if (Directory.is(resource)) return resource.children.sort((r1, r2) => {
+                if (r1.name === "code" && r2.name !== "code") return -1;
+                if (r1.name !== "code" && r2.name === "code") return 1;
+                return r1.name.localeCompare(r2.name);
+            });
         }
 
         if (FlattenDirectory.is(parent))
@@ -68,7 +74,7 @@ export class FileSystemNavigatorContentProvider
             if (Directory.is(resource)) {
                 if (this.flattenCodeDirectories) {
                     return Promise.all(
-                        resource.children.map(async child => {
+                        this.getSortedChildren(resource).map(async child => {
                             if (Directory.is(child)) {
                                 let next = (await this.fileSystem.get(
                                     child.location
@@ -96,7 +102,7 @@ export class FileSystemNavigatorContentProvider
                         })
                     );
                 } else if (Directory.is(resource))
-                    return resource.children;
+                    return this.getSortedChildren(resource);
             }
         }
 
@@ -110,12 +116,32 @@ export class FileSystemNavigatorContentProvider
 
     getParent(element: any) {
     }
+
+    private getSortedChildren(directory: Directory) {
+        return directory.children.sort((r1, r2) => {
+            if ((r1.directory && r2.directory) || (!r1.directory && !r2.directory))
+                return r1.name.localeCompare(r2.name);
+
+            return r1.directory ? -1 : 1;
+        });
+    }
 }
 
 @injectable()
 export class FileSystemNavigatorLabelProvider extends AbstractTreeLabelProvider
     implements NavigatorLabelProviderContribution {
     priority = 0;
+
+    @inject(FilesystemPreferences)
+    private readonly fsPref: FilesystemPreferences;
+
+    @postConstruct()
+    protected init() {
+        this.toDispose.push(this.fsPref.onPreferenceChanged(e => {
+            if (e.preferenceName === "navigator.hideFileExtensions")
+                this.onDidUpdateEmitter.fire(undefined);
+        }));
+    }
 
     canHandle(element: any): boolean {
         return Resource.is(element) || FlattenDirectory.is(element);
@@ -138,6 +164,9 @@ export class FileSystemNavigatorLabelProvider extends AbstractTreeLabelProvider
         if (Resource.is(element)) {
             let name = element.name;
             if (element.location.match(/^\/core\/code$/)) name = "models";
+            if (this.fsPref["navigator.hideFileExtensions"] && !element.directory && codeDirResourceRegExp.test(element.location))
+                name = withoutFileExtension(name);
+
             return [
                 <span key="resource-name" title={element.location}>
                     {name}

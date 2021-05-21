@@ -24,6 +24,7 @@ export class DirectoryWizardContribution implements WizardContribution {
     readonly iconClass = "martini-icon martini-directory-icon";
     readonly keybinding = "ctrlcmd+alt+n d";
     readonly primary = true;
+    readonly menuGroup = "5_misc"
 
     async createWizard(): Promise<Wizard> {
         return this.fileWizardFactory({

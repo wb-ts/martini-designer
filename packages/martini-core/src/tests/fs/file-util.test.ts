@@ -4,13 +4,13 @@ import {
     codeDirResourceRegExp,
     corePackageResourceRegExp,
     filterByParentDir,
-
-    getNamespace, getPackageRelativePath,
-
+    getNamespace,
+    getPackageRelativePath,
     isModifiable,
     isParent,
     isResourceArray,
     packageDirRegExp,
+    withoutFileExtension,
     withoutScheme
 } from "../../common/fs/file-util";
 import { Resource } from "../../common/fs/martini-filesystem";
@@ -268,4 +268,12 @@ test("Web directory path should not transform into namespace", () => {
 test("Should return the URI as string without the scheme", () => {
     const uri = new URI("martini://examples/code/Test.gloop");
     expect(withoutScheme(uri)).toBe("/examples/code/Test.gloop");
+});
+
+test("Should return the file name without the extension", () => {
+    expect(withoutFileExtension("test.gloop")).toBe("test");
+});
+
+test("Should return the file name with multiple dots without the extension", () => {
+    expect(withoutFileExtension("my.test.gloop")).toBe("my.test");
 });

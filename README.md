@@ -15,7 +15,7 @@ Install npm and node.
 
     nvm install 12.14.1
     nvm use 12.14.1
-    
+
 ### Install Theia Prerequisites
 
 See [here](https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#prerequisites).
@@ -46,6 +46,8 @@ In order to connect to the Martini Runtime server, Martini Designer needs to kno
 
 If you're using VS Code to launch, replace the env variable values in `.vscode/launch.json`.
 
+You can also override `MR_ADDRESS` and `MR_PORT` in the same fashion.
+
 ### Browser App
 
     # only the first time
@@ -68,8 +70,4 @@ Or launch the `Start Electron Backend` in the `.vscode/launch.json` file.
 
 ## Watching for Changes
 
-To rebuild the packages when there is changes, run `lerna run --parallel watch` in the project root.
-
-## Using the Application
-
-Open http://localhost:3000 in your browser. The first time you open it you'll have the default Theia workspace layout. Close all the views/tabs and open the Martini Designer related views like Navigator, Properties, Input/Output and Mapper using the View menu in the top menu bar.
+To rebuild the packages when there is changes, run `lerna run --parallel watch` in the project root. If you get the `lerna: command not found` error, try `npx lerna run --parallel watch`.

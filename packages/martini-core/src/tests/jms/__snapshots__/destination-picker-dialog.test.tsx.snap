@@ -30,7 +30,7 @@ exports[`DestinationPicker should be rendered 1`] = `
       Object {
         "display": "grid",
         "gridTemplateColumns": "1fr",
-        "gridTemplateRows": "max-content 1fr",
+        "gridTemplateRows": "max-content max-content",
       }
     }
   >
@@ -169,7 +169,7 @@ exports[`DestinationPicker should be rendered with default selected destination 
       Object {
         "display": "grid",
         "gridTemplateColumns": "1fr",
-        "gridTemplateRows": "max-content 1fr",
+        "gridTemplateRows": "max-content max-content",
       }
     }
   >

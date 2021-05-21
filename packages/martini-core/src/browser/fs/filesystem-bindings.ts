@@ -1,5 +1,6 @@
 import { CommandContribution, ResourceResolver } from "@theia/core";
 import { WebSocketConnectionProvider } from "@theia/core/lib/browser";
+import { TabBarToolbarContribution } from "@theia/core/lib/browser/shell/tab-bar-toolbar";
 import { interfaces } from "inversify";
 import messages from "martini-messages/lib/messages";
 import { MartiniFileSystem, martiniFileSystemPath } from "../../common/fs/martini-filesystem";
@@ -11,17 +12,22 @@ import {
 } from "../navigator/martini-navigator-view-widget";
 import { WizardContribution } from "../wizard/wizard-contribution";
 import { bindFileBrowserDialog } from "./file-browser/file-browser-dialog";
+import { ToggleHideFileExtensionHandler } from "./filesystem-command-handlers";
 import {
-    FileSystemNavigatorContentProvider,
-    FileSystemNavigatorLabelProvider,
-    FilesystemNavigatorOpenHandler
-} from "./filesystem-navigator-contribution";
-import { MartiniFileSystemCommandContribution } from "./martini-filesystem-contribution";
+    MartiniFileSystemCommandContribution,
+    MartiniFileSystemTabBarToolbarContribution
+} from "./martini-filesystem-contribution";
 import {
     MartiniFileEventDispatcher,
     MartiniFileSystemEventDispatcherClient
 } from "./martini-filesystem-event-dispatcher";
 import { MartiniResourceResolver } from "./martini-resource-resolver";
+import {
+    FileSystemNavigatorContentProvider,
+    FileSystemNavigatorLabelProvider,
+    FilesystemNavigatorOpenHandler
+} from "./navigator/filesystem-navigator-contribution";
+import { bindFsPreferences } from "./pref/filesystem-preferences";
 import {
     CodeFileLocationValidator,
     DefaultResourceLocationValidator,
@@ -81,7 +87,7 @@ export const bindFilesystemBindings = (bind: interfaces.Bind) => {
     bind(FileSystemNavigatorContentProvider).toSelf();
     bind(NavigatorContentProviderContribution).toService(FileSystemNavigatorContentProvider);
     bind(FileSystemNavigatorLabelProvider).toSelf();
-    bind(NavigatorLabelProviderContribution).to(FileSystemNavigatorLabelProvider);
+    bind(NavigatorLabelProviderContribution).toService(FileSystemNavigatorLabelProvider);
     bind(FilesystemNavigatorOpenHandler).toSelf();
     bind(NavigatorOpenHandler).toService(FilesystemNavigatorOpenHandler);
     bind(FileWizardHelper)
@@ -90,6 +96,9 @@ export const bindFilesystemBindings = (bind: interfaces.Bind) => {
 
     bind(CommandContribution)
         .to(MartiniFileSystemCommandContribution)
+        .inSingletonScope();
+    bind(TabBarToolbarContribution)
+        .to(MartiniFileSystemTabBarToolbarContribution)
         .inSingletonScope();
 
     bind(FileWizardPage).toSelf();
@@ -130,4 +139,7 @@ export const bindFilesystemBindings = (bind: interfaces.Bind) => {
     bind(WizardContribution).to(FileWizardContribution);
     bind(WizardContribution).to(DirectoryWizardContribution);
     bind(WizardContribution).to(CodeDirectoryWizardContribution);
+
+    bind(ToggleHideFileExtensionHandler).toSelf();
+    bindFsPreferences(bind);
 };

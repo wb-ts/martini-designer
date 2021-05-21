@@ -131,7 +131,7 @@ test("Edit should enable the cell editor and call onEdit when value is applied",
         tableEditor = Enzyme.mount(
             <TableEditor
                 tableProps={{
-                    columns,
+                    columns: [columns[columns.length - 1]],
                     data: heroes,
                     selectedRows: [0]
                 }}
@@ -139,6 +139,39 @@ test("Edit should enable the cell editor and call onEdit when value is applied",
             />
         );
         tableEditor!.find(".item").simulate("click");
+    });
+
+    tableEditor!.update();
+    tableEditor!.find("input").simulate("change", {
+        target: {
+            value: "test"
+        }
+    });
+    await act(async () => {
+        tableEditor!.find("input").simulate("keyup", {
+            key: "Enter",
+            preventDefault: jest.fn(),
+            stopPropagation: jest.fn()
+        });
+    });
+    expect(value).toBe("test");
+});
+
+test("Edit should enable the cell editor and call onEdit when value is applied 2", async () => {
+    let value;
+    let tableEditor: Enzyme.ReactWrapper;
+    await act(async () => {
+        tableEditor = Enzyme.mount(
+            <TableEditor
+                tableProps={{
+                    columns,
+                    data: heroes,
+                    selectedRows: [0]
+                }}
+                onEdit={async (_, __, _value) => { value = _value; }}
+            />
+        );
+        tableEditor!.find(".edit-button").at(0).simulate("click");
     });
     tableEditor!.update();
     tableEditor!.find("input").simulate("change", {

@@ -1,17 +1,26 @@
-import {makeContainerForCommandTest} from "../containers";
-import {MartiniFileSystemCommandContribution} from "../../browser/fs/martini-filesystem-contribution";
-import {MartiniFileSystem, Resource} from "../../common/fs/martini-filesystem";
-import {MartiniFileSystemNode} from "../../node/fs/node-martini-filesystem";
-import {CommandRegistry, SelectionService} from "@theia/core";
-import {DeleteCommand, RenameCommand} from "../../browser/martini-ide-contribution";
-import {DefaultResourceNameValidator} from "../../browser/fs/resource-name-validator";
-import {SingleTextInputDialog} from "@theia/core/lib/browser";
+import { CommandRegistry, SelectionService } from "@theia/core";
+import { SingleTextInputDialog } from "@theia/core/lib/browser";
+import { decorate, injectable } from "inversify";
+import { ToggleHideFileExtensionHandler } from "../../browser/fs/filesystem-command-handlers";
+import { MartiniFileSystemCommandContribution } from "../../browser/fs/martini-filesystem-contribution";
+import { DefaultResourceNameValidator } from "../../browser/fs/resource-name-validator";
+import { DeleteCommand, RenameCommand } from "../../browser/martini-ide-contribution";
+import { MartiniFileSystem, Resource } from "../../common/fs/martini-filesystem";
+import { MartiniFileSystemNode } from "../../node/fs/node-martini-filesystem";
+import { makeContainerForCommandTest } from "../containers";
 
 jest.mock("../../node/fs/node-martini-filesystem");
+jest.mock("../../browser/fs/filesystem-command-handlers");
+
+decorate(injectable(), ToggleHideFileExtensionHandler);
 
 const container = makeContainerForCommandTest([MartiniFileSystemCommandContribution], _container => {
     _container.bind(MartiniFileSystem).toConstantValue(new MartiniFileSystemNode());
-    _container.bind(DefaultResourceNameValidator).toSelf().inSingletonScope();
+    _container.bind(ToggleHideFileExtensionHandler).toSelf();
+    _container
+        .bind(DefaultResourceNameValidator)
+        .toSelf()
+        .inSingletonScope();
 });
 
 const fileSystem: MartiniFileSystem = container.get(MartiniFileSystem);
@@ -139,7 +148,7 @@ test("Rename command should be disabled for multiple selected resources", () => 
             size: 0,
             lastModified: 0
         }
-    ] as Resource [];
+    ] as Resource[];
     expect(commands.isEnabled(RenameCommand.id)).toBe(false);
 });
 

@@ -14,7 +14,8 @@ export const initYupLocale = () => {
         },
         string: {
             min: params => messages.min_length(params.min),
-            max: params => messages.max_length(params.max)
+            max: params => messages.max_length(params.max),
+            email: messages.must_be_valid_email
         }
     });
 };

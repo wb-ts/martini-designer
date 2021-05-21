@@ -164,7 +164,7 @@ export const MarkdownEditorToolBar: React.FC<MarkdownEditorToolBarProps> = ({
     />
     <ToolBarItem
         iconClass="martini-layout-icon"
-        tooltip={messages.show_preview_only}
+        tooltip={messages.toggle_orientation}
         onClick={_ => {
             const next = orientation === "horizontal" ? "vertical" : "horizontal";
             onOrientationChange(next);

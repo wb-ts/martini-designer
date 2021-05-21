@@ -8,7 +8,7 @@ import messages from "martini-messages/lib/messages";
 import * as React from "react";
 import * as Yup from "yup";
 import { EndpointType, getDisplayName, MartiniEndpoint, MartiniEndpointManager } from "../../../common/endpoint/martini-endpoint-manager";
-import { MartiniPackageManager } from "../../../common/package/martini-package-manager";
+import { MartiniPackageManager, PartialMartiniPackage } from "../../../common/package/martini-package-manager";
 import { UpDownLabel } from "../../components/up-down-label";
 import { FormEffect, FormRow, OnFormChange, validateSchema } from "../../form/form";
 import { Progress } from "../../progress/progress-service";
@@ -32,6 +32,7 @@ export class EndpointWizardContribution implements WizardContribution {
     readonly iconClass = "martini-icon martini-endpoint-icon";
     readonly keybinding = "ctrlcmd+alt+n e";
     readonly primary = true;
+    readonly menuGroup = "11_package";
 
     async createWizard(..._: any[]): Promise<Wizard> {
         return this.factory();
@@ -39,7 +40,10 @@ export class EndpointWizardContribution implements WizardContribution {
 
     isVisible() {
         const selection = this.selectionService.selection;
-        return isEndpointSelection(selection) || (selection instanceof Array && EndpointListTreeNode.is(selection[0]));
+        return isEndpointSelection(selection) ||
+            (selection instanceof Array &&
+                (EndpointListTreeNode.is(selection[0]) ||
+                    (PartialMartiniPackage.is(selection[0]) && selection[0].name !== "core")));
     }
 
 }
@@ -65,8 +69,11 @@ export class EndpointWizardPage extends AbstractWizardPage {
             this.defaultConfig.type = selection[0].type;
             this.defaultConfig.packageName = selection[0].packageName;
         }
-        else if (selection instanceof Array && EndpointListTreeNode.is(selection[0])) {
-            this.defaultConfig.packageName = selection[0].martiniPackage.name;
+        else if (selection instanceof Array) {
+            if (EndpointListTreeNode.is(selection[0]))
+                this.defaultConfig.packageName = selection[0].martiniPackage.name;
+            else if (PartialMartiniPackage.is(selection[0]))
+                this.defaultConfig.packageName = selection[0].name;
         }
     }
 

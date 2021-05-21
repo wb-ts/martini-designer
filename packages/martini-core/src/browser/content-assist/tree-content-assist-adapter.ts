@@ -1,4 +1,5 @@
-import { ExpandableTreeNode } from "@theia/core/lib/browser";
+import { ExpandableTreeNode, TreeNode } from "@theia/core/lib/browser";
+import { BaseTreeModel } from "../tree/base-tree";
 import { BaseTreeWidget } from "../tree/base-tree-widget";
 import { ContentAssistAdapter, InsertionBounds, Selection } from "./content-assist";
 
@@ -7,11 +8,23 @@ export class TreeContentAssistAdapter implements ContentAssistAdapter {
 
     getInsertionBounds(): InsertionBounds {
         const treeBounds = this.tree.node.getBoundingClientRect();
-        const selectedNode = this.tree.model.selectedNodes[0];
+        let selectedNode: TreeNode = this.tree.model.selectedNodes[0];
+
+        if (!selectedNode || selectedNode === this.tree.model.root) {
+            const allNodes = (this.tree.model as BaseTreeModel).baseTree.allNodes;
+            selectedNode = allNodes[allNodes.length - 1];
+        }
+
         if (selectedNode) {
             const element = this.tree.node.querySelector(`[data-node-id='${selectedNode.id}'`);
-            if (element) return element.parentElement!.getBoundingClientRect();
+            if (element) {
+                const bounds = element.parentElement!.getBoundingClientRect();
+                const _bounds = DOMRect.fromRect(bounds);
+                _bounds.y = Math.min(treeBounds.bottom - bounds.height, bounds.y);
+                return _bounds;
+            }
         }
+
         return {
             x: treeBounds.x,
             y: treeBounds.y,

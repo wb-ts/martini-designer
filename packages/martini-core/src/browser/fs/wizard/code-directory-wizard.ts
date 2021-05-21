@@ -11,6 +11,7 @@ export class CodeDirectoryWizardContribution extends AbstractCodeFileWizardContr
     readonly iconClass = "martini-icon martini-code-directory-icon";
     readonly keybinding = "ctrlcmd+alt+n c";
     readonly primary = true;
+    readonly menuGroup = "5_misc"
 
     protected getFileWizardProps(): DefaultFileWizardProps {
         return {

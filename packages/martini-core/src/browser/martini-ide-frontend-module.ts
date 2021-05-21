@@ -1,5 +1,6 @@
-import { CommandContribution, ILogger, LogLevel, MenuContribution } from "@theia/core";
+import { CommandContribution, CommandService, ILogger, LogLevel, MaybePromise, MenuContribution } from "@theia/core";
 import {
+    FrontendApplication,
     FrontendApplicationContribution,
     KeybindingContribution,
     WebSocketConnectionProvider
@@ -111,10 +112,20 @@ export class MartiniIdeFrontendContribution implements FrontendApplicationContri
     accountManager: MartiniAccountManager;
     @inject(ILogger)
     private readonly logger: ILogger;
+    @inject(CommandService)
+    private readonly commands: CommandService;
 
     initialize() {
         this.logger.setLogLevel(LogLevel.INFO);
         initYupExt();
         initYupLocale();
+    }
+
+    initializeLayout(app: FrontendApplication): MaybePromise<void> {
+        app.shell.widgets.forEach(widget => {
+            widget.close();
+        });
+        this.commands.executeCommand("martini.navigator.toggle")
+        this.commands.executeCommand("martini.togglePropertiesView")
     }
 }

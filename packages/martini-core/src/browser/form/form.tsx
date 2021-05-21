@@ -5,12 +5,14 @@ import messages from "martini-messages/lib/messages";
 import { flatten } from "lodash";
 import * as React from "react";
 import * as Yup from "yup";
+
 export interface FormRowProps {
     name: string;
     label: string;
     tooltip?: string;
     defaultValue?: any;
     gridTemplateColumns?: string;
+    gridTemplateRows?: string;
     showErrorMessage?: boolean;
 }
 
@@ -20,6 +22,7 @@ export const FormRow: React.FC<FormRowProps> = ({
     tooltip,
     defaultValue,
     gridTemplateColumns,
+    gridTemplateRows,
     showErrorMessage,
     children
 }) => {
@@ -63,7 +66,7 @@ export const FormRow: React.FC<FormRowProps> = ({
             style={{
                 display: "grid",
                 gridTemplateColumns: gridTemplateColumns ? gridTemplateColumns : "1fr",
-                gridTemplateRows: "max-content 1fr"
+                gridTemplateRows: gridTemplateRows ? gridTemplateRows : "max-content max-content"
             }}
         >
             {children}
@@ -97,9 +100,12 @@ export interface OnFormChangeProps<T> {
  * Component that will call the give onChange function when the values of the form changed.
  */
 export const OnFormChange: React.FC<OnFormChangeProps<any> & any> = connect(({ onChange, formik }) => {
+    const firstRender = React.useRef(true);
     const { values } = formik;
     React.useEffect(() => {
-        onChange(formik.values);
+        if (!firstRender.current)
+            onChange(formik.values);
+        firstRender.current = false;
     }, [values]);
     return <></>;
 }) as React.FC<OnFormChangeProps<any>>;

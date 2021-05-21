@@ -18,8 +18,19 @@ export class MartiniAccountManagerNode implements MartiniAccountManager {
 
     @postConstruct()
     init() {
-        this.ready = Promise.resolve();
-        if (this.client) this.client.onReady!();
+        this.ready = this.userStorage
+            .readContents(MartiniAccountManagerNode.STORAGE_PATH)
+            .then(contents => {
+                if (contents && contents.trim().length !== 0)
+                    this.account = JSON.parse(contents) as Account;
+                else {
+                    this.account = {
+                        name: process.env.MR_USERNAME || "",
+                        password: process.env.MR_PASSWORD || ""
+                    };
+                }
+                this.client && this.client.onReady!();
+            });
     }
 
     async getAccountName(): Promise<string> {
@@ -35,9 +46,14 @@ export class MartiniAccountManagerNode implements MartiniAccountManager {
     async set(name: string, password: string): Promise<void> {
         await this.ready;
         this.account = { name, password };
+        this.userStorage.saveContents(
+            MartiniAccountManagerNode.STORAGE_PATH,
+            JSON.stringify(this.account)
+        );
     }
 
-    dispose(): void {}
+    dispose(): void {
+    }
 
     setClient(client: MartiniAccountManagerClient | undefined): void {
         this.client = client;

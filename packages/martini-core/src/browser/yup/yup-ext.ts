@@ -1,6 +1,5 @@
-import { addMethod, string, StringSchema, TestContext } from "yup";
 import messages from "martini-messages/lib/messages";
-import URI from "@theia/core/lib/common/uri";
+import { addMethod, string, StringSchema, TestContext } from "yup";
 
 declare module "yup" {
     interface StringSchema {
@@ -33,13 +32,9 @@ export const initYupExt = () => {
 
     function url(this: StringSchema) {
         return this.test("url", "", function(this: TestContext, value?: any) {
+            if (!value) return value;
             const { path, createError } = this;
-            let valid = false;
-            try {
-                // tslint:disable-next-line:no-unused-expression
-                new URI(value);
-                valid = true;
-            } catch (error) {}
+            let valid = typeof value === "string" && value.match(URL_REGEX);
             if (!valid) return createError({ path, message: messages.invalid_url });
             return value;
         });
@@ -47,3 +42,6 @@ export const initYupExt = () => {
 
     addMethod(string, "url", url);
 };
+
+export const URL_REGEX =
+    "^(?!mailto:)(?:(?:http|https|ftp)://)(?:\\S+(?::\\S*)?@)?(?:(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[0-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]+-?)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]+-?)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))|localhost)(?::\\d{2,5})?(?:(/|\\?|#)[^\\s]*)?$";

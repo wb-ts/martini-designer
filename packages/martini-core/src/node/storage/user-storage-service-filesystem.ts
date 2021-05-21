@@ -16,8 +16,13 @@ export class UserStorageServiceFilesystemImpl implements UserStorageService {
     }
 
     async readContents(path: string): Promise<string> {
-        const uri = this.userStorageDir.join(path);
-        const buffer = await fs.readFile(uri.toString());
+        const uri = this.userStorageDir.join(path).toString();
+        try {
+            await fs.access(uri);
+        } catch (error) {
+            return "";
+        }
+        const buffer = await fs.readFile(uri);
 
         return buffer.toString("utf-8");
     }

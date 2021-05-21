@@ -163,6 +163,11 @@ select {
     min-height: 24px;
 }
 
+div.p-Widget.p-TabBar.p-TabPanel-tabBar[data-placement="bottom"] .p-TabBar-tab.p-mod-current {
+    border-bottom: 1px solid var(--theia-tab-unfocusedActiveBorderTop) !important;
+    border-top: 1px solid var(--theia-tab-unfocusedActiveBorder) !important;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);

@@ -1,5 +1,7 @@
 import { ConnectionHandler, JsonRpcConnectionHandler } from "@theia/core";
 import { BackendApplicationContribution } from "@theia/core/lib/node/backend-application";
+import * as express from "express";
+import { createProxyMiddleware } from "http-proxy-middleware";
 import { ContainerModule, inject, injectable } from "inversify";
 import {
     MartiniEndpointManager,
@@ -14,6 +16,7 @@ import {
     martiniAccountManagerPath
 } from "../common/instance/martini-account-manager";
 import {
+    MartiniInstanceInfo,
     MartiniInstanceInfoManager,
     MartiniInstanceInfoManagerClient,
     martiniInstanceInfoManagerPath
@@ -33,6 +36,7 @@ import {
     AxiosInstanceFactory,
     CachingAxiosInstanceFactory
 } from "./http/axios-instance-factory";
+import { ProxyBackendContribution } from "./http/proxy-backend-contribution";
 import { AuthService, AuthServiceImpl } from "./instance/auth/auth-service";
 import { MartiniAccountManagerNode } from "./instance/node-martini-account-manager";
 import { MartiniInstanceInfoManagerNode } from "./instance/node-martini-instance-info-manager";
@@ -52,6 +56,9 @@ export default new ContainerModule(bind => {
 
     bind(BackendApplicationContribution)
         .to(MartiniIdeBackendContribution)
+        .inSingletonScope();
+    bind(BackendApplicationContribution)
+        .to(ProxyBackendContribution)
         .inSingletonScope();
 
     bind(UserStorageService)
@@ -156,14 +163,16 @@ export default new ContainerModule(bind => {
 
 @injectable()
 class MartiniIdeBackendContribution implements BackendApplicationContribution {
-    @inject(MartiniAccountManager)
-    private readonly accountManager: MartiniAccountManager;
+    @inject(MartiniInstanceInfoManager)
+    private readonly instanceInfoManager: MartiniInstanceInfoManager;
 
-    initialize() {
-        this.doInit();
-    }
-
-    async doInit() {
-        await this.accountManager.set(process.env.MR_USERNAME || "", process.env.MR_PASSWORD || "");
+    async configure?(app: express.Application): Promise<void> {
+        const instance = await this.instanceInfoManager.get();
+        app.use(
+            "/*",
+            createProxyMiddleware({
+                target: MartiniInstanceInfo.getUri(instance).toString()
+            })
+        );
     }
 }

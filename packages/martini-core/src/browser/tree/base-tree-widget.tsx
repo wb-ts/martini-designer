@@ -1,4 +1,4 @@
-import { Disposable, DisposableCollection, Emitter } from "@theia/core";
+import { Disposable, DisposableCollection, Emitter, MenuPath } from "@theia/core";
 import {
     COLLAPSED_CLASS, ContextMenuRenderer,
     ExpandableTreeNode,
@@ -8,9 +8,9 @@ import {
     TreeNode,
     TreeProps,
     TreeWidget,
-    TREE_NODE_CONTENT_CLASS, TREE_NODE_SEGMENT_CLASS
+    TREE_NODE_CONTENT_CLASS, TREE_NODE_INDENT_GUIDE_CLASS, TREE_NODE_SEGMENT_CLASS
 } from "@theia/core/lib/browser";
-import { inject, injectable, optional } from "inversify";
+import { inject, injectable, multiInject, optional } from "inversify";
 import * as React from "react";
 import * as ReactDOM from 'react-dom';
 import { TextHighlighter } from "../components/text-highlighter";
@@ -38,6 +38,15 @@ export interface DnDHandler {
 
 }
 
+export const GutterColumn = Symbol("GutterColumn");
+export interface GutterColumn {
+    width: number;
+    order: number;
+    computeWidth(visibleElements: any[]): void;
+    render(element: any): React.ReactNode;
+    onDoubleClick?(element: any, event: MouseEvent): void;
+}
+
 @injectable()
 export class BaseTreeWidget extends TreeWidget {
 
@@ -49,6 +58,9 @@ export class BaseTreeWidget extends TreeWidget {
     @inject(TreeEditor)
     @optional()
     protected treeEditor: TreeEditor | undefined;
+    @multiInject(GutterColumn)
+    @optional()
+    protected gutterColumns: GutterColumn[];
 
     protected readonly toCancelNodeExpansion = new DisposableCollection();
     protected dropTargetNode: TreeNode | undefined;
@@ -67,6 +79,11 @@ export class BaseTreeWidget extends TreeWidget {
 
     private enterKeyDown = false;
 
+    protected gutterWidth = 0;
+    protected gutterPadding = 0;
+    protected gutterContextMenuPath: MenuPath | undefined;
+    protected visibleGutterColumns: GutterColumn[] = [];
+
     constructor(
         @inject(TreeContentProvider)
         protected readonly treeContentProvider: TreeContentProvider,
@@ -82,9 +99,11 @@ export class BaseTreeWidget extends TreeWidget {
             this.toDispose.push(treeLabelProvider.onDidUpdate(() => this.update()));
         if (treeContentProvider.onDidUpdate)
             this.toDispose.push(
-                treeContentProvider.onDidUpdate(() => this.updateGlobalSelection())
+                treeContentProvider.onDidUpdate(() => this.update())
             );
         this.toDispose.push(this.toCancelNodeExpansion);
+        if (props.contextMenuPath)
+            this.gutterContextMenuPath = [...props.contextMenuPath, "gutter"];
     }
 
     protected init(): void {
@@ -176,6 +195,41 @@ export class BaseTreeWidget extends TreeWidget {
                 }
             }
             event.stopPropagation();
+        }
+    }
+
+    protected handleGutterClickEvent(
+        node: TreeNode | undefined,
+        event: React.MouseEvent<HTMLElement>
+    ) {
+        if (event.button === 0)
+            this.handleClickEvent(node, event);
+    }
+
+    protected handleGutterDoubleClickEvent(
+        node: TreeNode | undefined,
+        gutterColumn: GutterColumn,
+        event: React.MouseEvent<HTMLElement>
+    ) {
+        if (gutterColumn.onDoubleClick) {
+            gutterColumn.onDoubleClick((node as DataTreeNode).data, event.nativeEvent);
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    }
+
+    protected handleGutterContextMenuEvent(
+        node: TreeNode | undefined,
+        event: React.MouseEvent<HTMLElement>
+    ) {
+        if (this.gutterContextMenuPath) {
+            event.stopPropagation();
+            event.preventDefault();
+            this.handleClickEvent(node, event);
+            this.contextMenuRenderer.render({
+                anchor: event.nativeEvent,
+                menuPath: this.gutterContextMenuPath
+            });
         }
     }
 
@@ -294,6 +348,82 @@ export class BaseTreeWidget extends TreeWidget {
     }
 
     /**
+     * Actually render the node row.
+     */
+    protected doRenderNodeRow({ index, node, depth }: TreeWidget.NodeRow): React.ReactNode {
+        return <React.Fragment>
+            {this.renderGutter(node)}
+            {this.renderIndent(node, { depth })}
+            {this.renderNode(node, { depth })}
+        </React.Fragment>;
+    }
+
+    protected renderGutter(node: TreeNode): React.ReactNode {
+        if (!this.gutterWidth)
+            return undefined;
+
+        return <div
+            data-node-id={node.id}
+            onClick={e => this.handleGutterClickEvent(node, e)}
+            onContextMenu={e => this.handleGutterContextMenuEvent(node, e)}
+            style={{
+                position: "absolute",
+                display: "grid",
+                gridTemplateColumns: this.visibleGutterColumns.map(col => col.width + "px").join(" "),
+                height: "var(--theia-content-line-height)",
+                width: this.gutterWidth,
+                gridColumnGap: "4px"
+            }}
+        >
+            {this.visibleGutterColumns.map((col, i) => (
+                <div
+                    key={i}
+                    style={{
+                        width: col.width,
+                        maxWidth: col.width,
+                        display: "grid",
+                        alignItems: "center",
+                    }}
+                    onDoubleClick={e => this.handleGutterDoubleClickEvent(node, col, e)}
+                >
+                    {col.render((node as DataTreeNode).data)}
+                </div>
+            ))}
+        </div>;
+    }
+
+    /**
+     * Render indent for the file tree based on the depth
+     * @param node the tree node.
+     * @param depth the depth of the tree node.
+     */
+    protected renderIndent(node: TreeNode, props: NodeProps): React.ReactNode {
+        const renderIndentGuides = this.corePreferences['workbench.tree.renderIndentGuides'];
+        if (renderIndentGuides === 'none') {
+            return undefined;
+        }
+
+        const indentDivs: React.ReactNode[] = [];
+        let current: TreeNode | undefined = node;
+        let depth = props.depth;
+        while (current && depth) {
+            const classNames: string[] = [TREE_NODE_INDENT_GUIDE_CLASS];
+            if (this.needsActiveIndentGuideline(current)) {
+                classNames.push('active');
+            } else {
+                classNames.push(renderIndentGuides === 'onHover' ? 'hover' : 'always');
+            }
+            const paddingLeft = this.gutterWidth + this.props.leftPadding * depth;
+            indentDivs.unshift(<div key={depth} className={classNames.join(' ')} style={{
+                paddingLeft: `${paddingLeft}px`
+            }} />);
+            current = current.parent;
+            depth--;
+        }
+        return indentDivs;
+    }
+
+    /**
      * Render the node given the tree node and node properties.
      * @param node the tree node.
      * @param props the node properties.
@@ -328,6 +458,7 @@ export class BaseTreeWidget extends TreeWidget {
 
     protected render() {
         setTimeout(() => this.onRenderedEmitter.fire());
+        this.updateGutter();
         return super.render();
     }
 
@@ -439,6 +570,26 @@ export class BaseTreeWidget extends TreeWidget {
             onDragEnd: event => this.handleDragEndEvent(event),
             onDrop: event => this.handleDropEvent(node, event)
         };
+    }
+
+    protected updateGutter() {
+        this.gutterWidth = 0;
+
+        if (!this.gutterColumns.length) return;
+
+        const visibleElements: any[] = [];
+        Array.from(this.rows.values(), row => visibleElements.push((row.node as DataTreeNode).data));
+        this.gutterColumns.forEach(col => col.computeWidth(visibleElements));
+        this.visibleGutterColumns = this.gutterColumns.filter(col => col.width).sort((col1, col2) => col1.order - col2.order);
+        this.gutterWidth = this.visibleGutterColumns.length ? this.visibleGutterColumns.map(col => col.width).reduce((w1, w2) => w1 + w2) : 0;
+        this.gutterWidth += this.visibleGutterColumns.length * 4 + 4;
+    }
+
+    protected getPaddingLeft(node: TreeNode, props: NodeProps): number {
+        const paddingLeft = super.getPaddingLeft(node, props);
+        if (!this.gutterColumns.length)
+            return paddingLeft;
+        return paddingLeft + this.gutterWidth;
     }
 
     protected handleDragStartEvent(node: TreeNode, event: React.DragEvent): void {

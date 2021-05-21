@@ -1,5 +1,6 @@
-import { CommandContribution, CommandRegistry, Path, SelectionService } from "@theia/core";
+import { Command, CommandContribution, CommandRegistry, Path, SelectionService } from "@theia/core";
 import { SingleTextInputDialog } from "@theia/core/lib/browser";
+import { TabBarToolbarContribution, TabBarToolbarRegistry } from "@theia/core/lib/browser/shell/tab-bar-toolbar";
 import { inject, injectable } from "inversify";
 import messages from "martini-messages/lib/messages";
 import { filterByParentDir, isModifiable, isResourceArray } from "../../common/fs/file-util";
@@ -7,7 +8,13 @@ import { MartiniFileSystem, Resource } from "../../common/fs/martini-filesystem"
 import { ConfirmDialog, createListMessage } from "../dialogs/dialogs";
 import { DeleteCommand, RenameCommand } from "../martini-ide-contribution";
 import { ProgressService } from "../progress/progress-service";
+import { ToggleHideFileExtensionHandler } from "./filesystem-command-handlers";
 import { DefaultResourceNameValidator } from "./resource-name-validator";
+
+export const ToggleHideFileExtensionCommand: Command = {
+    id: "fs.toggleHideFileExtension",
+    label: messages.hide_file_extensions
+};
 
 @injectable()
 export class MartiniFileSystemCommandContribution implements CommandContribution {
@@ -19,6 +26,8 @@ export class MartiniFileSystemCommandContribution implements CommandContribution
     private readonly progressService: ProgressService;
     @inject(DefaultResourceNameValidator)
     private readonly resourceNameValidator: DefaultResourceNameValidator;
+    @inject(ToggleHideFileExtensionHandler)
+    private readonly toggleHideFileExtHandler: ToggleHideFileExtensionHandler;
 
     registerCommands(commands: CommandRegistry): void {
         commands.registerHandler(DeleteCommand.id, {
@@ -97,6 +106,19 @@ export class MartiniFileSystemCommandContribution implements CommandContribution
                 isResourceArray(this.selectionService.selection) &&
                 this.selectionService.selection.every(r => isModifiable(r)) &&
                 this.selectionService.selection.length === 1
+        });
+
+        commands.registerCommand(ToggleHideFileExtensionCommand, this.toggleHideFileExtHandler);
+    }
+}
+
+@injectable()
+export class MartiniFileSystemTabBarToolbarContribution implements TabBarToolbarContribution {
+    registerToolbarItems(registry: TabBarToolbarRegistry): void {
+        registry.registerItem({
+            id: ToggleHideFileExtensionCommand.id,
+            command: ToggleHideFileExtensionCommand.id,
+            group: "filesystem"
         });
     }
 }

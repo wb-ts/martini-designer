@@ -1,4 +1,4 @@
-import {injectable, postConstruct} from "inversify";
+import { injectable, postConstruct } from "inversify";
 import {
     MartiniInstanceInfo,
     MartiniInstanceInfoManager,
@@ -16,8 +16,8 @@ export class MartiniInstanceInfoManagerNode
     init(): void {
         // TODO read MR properties file to figure out protocol and port
         this.info = {
-            address: "localhost",
-            port: 8080,
+            address: process.env.MR_ADDRESS || "localhost",
+            port: process.env.MR_PORT !== undefined ? Number.parseInt(process.env.MR_PORT) : 8080,
             secured: false
         };
         this.ready = Promise.resolve();

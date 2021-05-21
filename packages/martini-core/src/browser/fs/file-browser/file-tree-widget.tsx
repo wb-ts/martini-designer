@@ -21,7 +21,7 @@ import { BaseTreeWidget } from "../../tree/base-tree-widget";
 import {
     FileSystemNavigatorContentProvider,
     FileSystemNavigatorLabelProvider
-} from "../filesystem-navigator-contribution";
+} from "../navigator/filesystem-navigator-contribution";
 
 @injectable()
 export class FileTreeWidget extends BaseTreeWidget {

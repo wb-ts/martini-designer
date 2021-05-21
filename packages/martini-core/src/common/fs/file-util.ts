@@ -73,3 +73,10 @@ export const withoutScheme = (uri: URI) => {
     if (uri.scheme) return uri.toString().replace(uri.scheme + ":/", "");
     return uri.toString();
 };
+
+export const withoutFileExtension = (name: string) => {
+    const index = name.lastIndexOf(".");
+    if (!index) return name;
+
+    return name.substring(0, index);
+};

@@ -26,6 +26,7 @@ export class MartiniPackageWizardContribution implements WizardContribution {
     readonly iconClass = "martini-icon martini-package-icon";
     readonly keybinding = "ctrlcmd+alt+n p";
     readonly primary = true;
+    readonly menuGroup = "11_package"
 
     async createWizard(_: any[]): Promise<Wizard> {
         return this.factory();
@@ -123,7 +124,7 @@ const CreatePackageForm: React.FC<CreatePackageFormProps> = ({
     onValidate,
     onChange
 }) => {
-    const schema = React.useMemo(() => Yup.object().shape<MartiniPackageCreateConfig>({
+    const schema = Yup.object().shape<MartiniPackageCreateConfig>({
         name: Yup.string()
             .required()
             .matches(packageNameRegExp, messages.only_alphanumeric)
@@ -131,7 +132,7 @@ const CreatePackageForm: React.FC<CreatePackageFormProps> = ({
         marketplaceId: Yup.string().required().matches(marketplaceIdRegExp, messages.invalid_marketplace_id),
         version: Yup.string().required(),
         stateOnStartUp: Yup.mixed().required().oneOf(["STARTED", "LOADED", "UNLOADED"])
-    }), []);
+    });
 
     return (
         <Formik

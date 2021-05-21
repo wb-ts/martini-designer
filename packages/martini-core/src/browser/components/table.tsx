@@ -16,7 +16,7 @@ const Styles = styled.div`
         display: flex;
         flex-direction: column;
         height: 100%;
-        overflow-y: overlay;
+        overflow-y: hidden;
 
         .thead {
             flex-shrink: 0;
@@ -24,7 +24,7 @@ const Styles = styled.div`
 
         .tbody {
             flex: 1;
-            overflow-y: auto;
+            overflow-y: overlay;
         }
 
         .tr {
@@ -169,7 +169,7 @@ export const Table: React.FC<TableProps> = ({
 
     React.useEffect(() => {
         if (selectedRowRef.current)
-            ElementExt.scrollIntoViewIfNeeded(selectedRowRef.current.parentElement!, selectedRowRef.current);
+            ElementExt.scrollIntoViewIfNeeded(selectedRowRef.current.parentElement!.parentElement!, selectedRowRef.current);
     }, [selectedRows]);
 
     const handleSelectionChange = (selectedRows: number[]) => {
@@ -241,7 +241,7 @@ export const Table: React.FC<TableProps> = ({
             onCellDoubleClick({
                 columnId: cell.column.id,
                 rowIndex: cell.row.index,
-                value: cell.row.original,
+                value: cell.value,
                 mouseEvent: e
             });
         }
