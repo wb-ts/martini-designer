@@ -57,7 +57,7 @@ export const EndpointEditorToolbar: React.FC<EndpointEditorToolbarProps> = ({
     errors
 }) => {
     let title = <div className="title-wrapper">
-        <div className="title">{getDisplayName(endpointType)} Connection - {connectionName}</div>
+        <div className="title">{getDisplayName(endpointType)} Endpoint - {connectionName}</div>
     </div>;
     if (errors.length !== 0) {
         const tooltip = errorsToString(errors);
