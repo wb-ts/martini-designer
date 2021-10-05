@@ -40,7 +40,7 @@ exports[`Editor should be rendered with existing endpoint 1`] = `
         className="title"
       >
         Directory Watcher
-         Connection - 
+         Endpoint - 
         test
       </div>
     </div>
@@ -163,7 +163,7 @@ exports[`Editor should be rendered with new endpoint 1`] = `
         className="title"
       >
         Directory Watcher
-         Connection - 
+         Endpoint - 
         test
       </div>
     </div>

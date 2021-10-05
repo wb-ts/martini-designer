@@ -36,7 +36,7 @@ exports[`EndpointEditorToolbar should be rendered 1`] = `
       className="title"
     >
       Directory Watcher
-       Connection - 
+       Endpoint - 
       test
     </div>
   </div>
@@ -149,7 +149,7 @@ exports[`EndpointEditorToolbar should be rendered with disabled start and stop 1
       className="title"
     >
       Directory Watcher
-       Connection - 
+       Endpoint - 
       test
     </div>
   </div>
