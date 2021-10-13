@@ -129,3 +129,26 @@ export interface RssEndpoint extends MartiniEndpoint {
     onlyNew: boolean;
     rssUrl: string;
 }
+
+export interface EmailSettings {
+    host: string;
+    port: number;
+    username: string;
+    password: string;
+    ssl: boolean;
+}
+
+export interface ReplyEmailSettings extends EmailSettings {
+    from: string;
+}
+
+export interface EmailEndpoint extends MartiniEndpoint, EmailSettings {
+    schedule: string;
+    replicated: boolean;
+    track : boolean;
+    protocol: "imap" | "pop3";
+    deleteOnReceive: boolean;
+    sendOutputAsReply: boolean;
+    sendReplyOnError: boolean;
+    replyEmailSettings: ReplyEmailSettings;
+}

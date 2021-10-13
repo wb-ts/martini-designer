@@ -8,7 +8,7 @@ import messages from "martini-messages/lib/messages";
 import * as React from "react";
 import styled from "styled-components";
 import { createDefaultEndpoint } from "../../../common/endpoint/martini-endpoint-defaults";
-import { EndpointEvent, EndpointType, MartiniEndpoint, MartiniEndpointManager, RssEndpoint } from "../../../common/endpoint/martini-endpoint-manager";
+import { EndpointEvent, EndpointType, MartiniEndpoint, MartiniEndpointManager, RssEndpoint, EmailEndpoint } from "../../../common/endpoint/martini-endpoint-manager";
 import { DocumentTypeManager } from "../../../common/tracker/document-type-manager";
 import { Loader } from "../../components/loader";
 import { ConfirmDialog, createListMessage } from "../../dialogs/dialogs";
@@ -20,6 +20,7 @@ import { ProgressService } from "../../progress/progress-service";
 import { EndpointEventDispatcher } from "../endpoint-event-dispatcher";
 import { EndpointEditorToolbar } from "./endpoint-editor-toolbar";
 import { RssEndpointForm } from "./rss/rss-endpoint-form";
+import { EmailEndpointForm } from "./email/email-endpoint-form";
 
 export const EndpointEditorOptions = Symbol("EndpointEditorOptions");
 export interface EndpointEditorOptions {
@@ -91,7 +92,6 @@ export class EndpointEditor extends ReactWidget implements Saveable {
         }
 
         this.currentEndpoint = cloneDeep(this.initialEndpoint);
-
         this.toDispose.push(this.endpointEventDispatcher.onEndpointEvent(this.handleEndpointEvent));
         this.update();
     }
@@ -301,13 +301,25 @@ export class EndpointEditor extends ReactWidget implements Saveable {
         this.reset = false;
         switch (this.options.endpointType) {
             case EndpointType.RSS:
-                return <RssEndpointForm
-                    endpoint={this.currentEndpoint as RssEndpoint}
-                    documentTypeProvider={() => this.documentTypeManager.getAll()}
-                    onChange={endpoint => this.handleChange(endpoint)}
-                    onValidate={errors => this.handleErrors(errors)}
-                    reset={_reset}
-                />;
+                return (
+                    <RssEndpointForm
+                        endpoint={this.currentEndpoint as RssEndpoint}
+                        documentTypeProvider={() => this.documentTypeManager.getAll()}
+                        onChange={endpoint => this.handleChange(endpoint)}
+                        onValidate={errors => this.handleErrors(errors)}
+                        reset={_reset}
+                    />
+                );
+            case EndpointType.EMAIL:
+                return (
+                    <EmailEndpointForm
+                        endpoint={this.currentEndpoint as EmailEndpoint}
+                        documentTypeProvider={() => this.documentTypeManager.getAll()}
+                        onChange={endpoint => this.handleChange(endpoint)}
+                        onValidate={errors => this.handleErrors(errors)}
+                        reset={_reset}
+                    />
+                );
             default:
                 return <></>;
         }

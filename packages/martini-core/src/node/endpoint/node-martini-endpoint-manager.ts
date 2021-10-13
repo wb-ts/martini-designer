@@ -1,9 +1,12 @@
 import { inject, injectable, postConstruct } from "inversify";
 import {
+    EmailEndpoint,
     EndpointEvent,
+    EndpointType,
     MartiniEndpoint,
     MartiniEndpointManager,
-    MartiniEndpointManagerClient
+    MartiniEndpointManagerClient,
+    RssEndpoint
 } from "../../common/endpoint/martini-endpoint-manager";
 import { MartiniEventDispatcher } from "../event/martini-event-manager";
 import { AxiosInstanceFactory } from "../http/axios-instance-factory";
@@ -23,7 +26,10 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
         "packageName",
         "enabled",
         "modifiable",
-        "status"
+        "status",
+        "replicated",
+        "track",
+        "documentType"
     ];
 
     @postConstruct()
@@ -57,10 +63,9 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
         );
 
         if (response.status !== 200) return undefined;
-
         const data = response.data;
 
-        return {
+        let endpoint: MartiniEndpoint = {
             type: data.type,
             name: data.name,
             service: data.service,
@@ -68,8 +73,44 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
             enabled: data.enabled,
             modifiable: data.modifiable,
             status: data.status,
-            ...data.properties
+            replicated: data.properties.replicated === "true",
+            track: data.properties.track === "true",
+            documentType: data.properties.documentType,
         };
+
+        if (response.data.type === "email") {
+            endpoint = {
+                ...endpoint,
+                host: data.properties.host || "",
+                port: Number.parseInt(data.properties.port || "1"),
+                username: data.properties.username,
+                password: data.properties.password,
+                schedule: data.properties.schedule,
+                protocol: data.properties.type,
+                ssl: data.properties.ssl === "true",
+                sendReplyOnError: data.properties.sendReplyOnError === "true",
+                sendOutputAsReply: data.properties.sendOutputAsReply === "true",
+                deleteOnReceive: data.properties.deleteOnReceive === "true",
+                replyEmailSettings: {
+                    host: data.properties["reply-host"] || "",
+                    port: Number.parseInt(data.properties["reply-port"] || "1"),
+                    username: data.properties["reply-username"] || "",
+                    password: data.properties["reply-password"],
+                    from: data.properties["reply-from"] || "",
+                    ssl: data.properties["reply-ssl"] === "true",
+                }
+            } as EmailEndpoint;
+        }
+        else if (response.data.type === "rss") {
+            endpoint = {
+                ...endpoint,
+                rssUrl: data.properties.rssUrl || "",
+                schedule: data.properties.schedule || "",
+                onlyNew: data.properties.onlyNew === "true"
+            } as RssEndpoint;
+        }
+
+        return endpoint;
     }
 
     async start(packageName: string, endpointName: string): Promise<void> {
@@ -104,15 +145,18 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
 
     private toSavePayload(endpoint: MartiniEndpoint) {
         return {
-            type: endpoint.type,
-            name: endpoint.name,
-            endpointType: endpoint.name,
             endpointName: endpoint.name,
-            service: endpoint.service,
+            endpointType: endpoint.type,
+            serviceName: endpoint.service,
             packageName: endpoint.packageName,
             enabled: endpoint.enabled,
             modifiable: endpoint.modifiable,
-            properties: this.getProperties(endpoint)
+            properties: {
+                replicated: endpoint.replicated,
+                track: endpoint.track,
+                documentType: endpoint.documentType,
+                ...this.getProperties(endpoint)
+            }
         };
     }
 
@@ -124,20 +168,49 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
             enabled: endpoint.enabled,
             packageName: endpoint.packageName,
             serviceName: endpoint.service,
-            properties: this.getProperties(endpoint)
+            properties: {
+                replicated: endpoint.replicated,
+                track: endpoint.track,
+                documentType: endpoint.documentType,
+                ...this.getProperties(endpoint)
+            }
         };
     }
 
     private getProperties(endpoint: MartiniEndpoint) {
+        switch (endpoint.type) {
+            case EndpointType.EMAIL: {
+                const _endpoint = endpoint as EmailEndpoint;
+                return {
+                    host: _endpoint.host,
+                    port: _endpoint.port,
+                    username: _endpoint.username,
+                    password: _endpoint.password,
+                    schedule: _endpoint.schedule,
+                    type: _endpoint.protocol,
+                    ssl: _endpoint.ssl,
+                    sendReplyOnError: _endpoint.sendReplyOnError,
+                    sendOutputAsReply: _endpoint.sendOutputAsReply,
+                    deleteOnReceive: _endpoint.deleteOnReceive,
+                    "reply-host": _endpoint.replyEmailSettings.host,
+                    "reply-port": _endpoint.replyEmailSettings.port,
+                    "reply-username": _endpoint.replyEmailSettings.username,
+                    "reply-password": _endpoint.replyEmailSettings.password,
+                    "reply-from": _endpoint.replyEmailSettings.from,
+                    "reply-ssl": _endpoint.replyEmailSettings.ssl,
+                };
+            }
+        }
+
         return Object.entries(endpoint)
             .filter(([key, _]) => !this.excludedPayloadProperties.includes(key))
             .reduce((properties, [key, value]) => {
                 properties[key] = value;
                 return properties;
-            }, {} as { [key: string]: any });
+            }, {} as { [key: string]: any; });
     }
 
-    dispose(): void {}
+    dispose(): void { }
 
     setClient(client: MartiniEndpointManagerClient | undefined): void {
         this.client = client;

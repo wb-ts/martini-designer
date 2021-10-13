@@ -1,0 +1,684 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailEndpointForm should be rendered 1`] = `
+<form
+  action="#"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      General Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="service"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The service to execute when the endpoint is triggered."
+          >
+            Service
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr max-content",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="service"
+              onBlur={[Function]}
+              onChange={[Function]}
+              readOnly={true}
+              type="text"
+              value=""
+            />
+            <input
+              className="theia-button"
+              type="button"
+              value="Browse..."
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="documentType"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The document type to be registered to Tracker when this endpoint is triggered."
+          >
+            Document Type
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr max-content",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="documentType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              readOnly={true}
+              type="text"
+              value="E-Mail"
+            />
+            <input
+              className="theia-button"
+              onClick={[Function]}
+              type="button"
+              value="Browse..."
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="enabled"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Whether or not the endpoint should be started automatically when the package is started."
+          >
+            Auto Start
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="enabled"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="track"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Flag determining whether executions should be logged to Tracker."
+          >
+            Log to Tracker
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="track"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="replicated"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="If this endpoint is configured on a Martini instance that's running in a cluster, replicated will determine whether to run the endpoint on all instances, or only the elected leader node in the cluster. When this is checked, all instances will run the endpoint. When it's unchecked, only the leader node will run the endpoint."
+          >
+            Replicated
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="replicated"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={true}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Email Configuration
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="host"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The email server to connect to."
+          >
+            Host
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr max-content",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="host"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+            <input
+              className="theia-button"
+              onClick={[Function]}
+              type="button"
+              value="Choose"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="port"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The server port number."
+          >
+            Host
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              max="65535"
+              min="1"
+              name="port"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value={993}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="username"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The email address used to login."
+          >
+            Username
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="username"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="password"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The password used to login."
+          >
+            Password
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              name="password"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="password"
+              value=""
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="schedule"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The interval in seconds, at which Martini checks the inbox."
+          >
+            Polling Interval (seconds)
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              className="theia-input"
+              min="1"
+              name="schedule"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="number"
+              value="1"
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="ssl"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Flag to determine whether the connection uses SSL."
+          >
+            SSL
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="ssl"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="protocol"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="The email protocol to use. Supports protocols: IMAP and POP3."
+          >
+            Protocol
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <label>
+              <input
+                checked={true}
+                className="theia-input"
+                name="protocol"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="radio"
+                value="imap"
+              />
+               IMAP
+            </label>
+            <label>
+              <input
+                checked={false}
+                className="theia-input"
+                name="protocol"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="radio"
+                value="pop3"
+              />
+               POP3
+            </label>
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Collapsible"
+  >
+    <span
+      className="Collapsible__trigger is-open"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      style={null}
+      tabIndex={null}
+    >
+      Email Actions
+    </span>
+    <div
+      className="Collapsible__contentOuter"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "WebkitTransition": "none",
+          "height": "auto",
+          "msTransition": "none",
+          "overflow": "hidden",
+          "transition": "none",
+        }
+      }
+    >
+      <div
+        className="Collapsible__contentInner"
+      >
+        <div
+          onFocus={[Function]}
+          style={
+            Object {
+              "display": "grid",
+              "gridColumnGap": 10,
+              "gridTemplateColumns": "max-content 1fr",
+            }
+          }
+        >
+          <label
+            htmlFor="deleteOnReceive"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Flag determining whether the received email be deleted after the service is invoked."
+          >
+            Delete Email Once Received
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="deleteOnReceive"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="sendOutputAsReply"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Flag determining whether the output of the service be used as a reply body."
+          >
+            Send Service Response As Reply
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="sendOutputAsReply"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+          <label
+            htmlFor="sendReplyOnError"
+            onContextMenu={[Function]}
+            style={
+              Object {
+                "marginTop": "3px",
+                "verticalAlign": "center",
+              }
+            }
+            title="Flag determining whether the exception thrown by the service, if any, be sent back as reply body."
+          >
+            Send Reply On Error
+          </label>
+          <div
+            style={
+              Object {
+                "display": "grid",
+                "gridTemplateColumns": "1fr",
+                "gridTemplateRows": "max-content max-content",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="sendReplyOnError"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="checkbox"
+              value={false}
+            />
+            <div
+              className="form-error-message-wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;
