@@ -1,4 +1,10 @@
-import { EndpointType, MartiniEndpoint, RssEndpoint , EmailEndpoint } from "./martini-endpoint-manager";
+import {
+    EndpointType,
+    MartiniEndpoint,
+    RssEndpoint,
+    EmailEndpoint,
+    SchedulerEndpoint
+} from "./martini-endpoint-manager";
 
 export const createDefaultEndpoint = (packageName: string, name: string, type: EndpointType): MartiniEndpoint => {
     switch (type) {
@@ -6,6 +12,8 @@ export const createDefaultEndpoint = (packageName: string, name: string, type: E
             return createDefaultRssEndpoint(packageName, name);
         case EndpointType.EMAIL:
             return createDefaultEmailEndpoint(packageName, name);
+        case EndpointType.SCHEDULER:
+            return createDefaultSchedulerEndpoint(packageName, name);
         default:
             return {
                 name,
@@ -47,19 +55,45 @@ const createDefaultEmailEndpoint = (packageName: string, name: string): EmailEnd
     schedule: "repeating:1000",
     host: "",
     port: 993,
-    username : "",
-    password : "",
-    deleteOnReceive : false ,
-    sendReplyOnError : false ,
-    sendOutputAsReply : false ,
-    protocol : "imap" ,
-    ssl : false,
-    replyEmailSettings : {
+    username: "",
+    password: "",
+    deleteOnReceive: false,
+    sendReplyOnError: false,
+    sendOutputAsReply: false,
+    protocol: "imap",
+    ssl: false,
+    replyEmailSettings: {
         host: "",
         port: 1,
         username: "",
         password: "",
         ssl: false,
         from: ""
+    }
+});
+const createDefaultSchedulerEndpoint = (packageName: string, name: string): SchedulerEndpoint => ({
+    name,
+    type: EndpointType.SCHEDULER,
+    packageName,
+    service: "",
+    modifiable: true,
+    replicated: true,
+    status: "STOPPED",
+    documentType: "Scheduler",
+    enabled: true,
+    track: false,
+    scheduleType: "simpleRepeating",
+    stateful: false,
+    cronSettings: {
+        dayType: "weekday",
+        months: "*",
+        weekdays: "*",
+        days: "*",
+        hours: "*",
+        minutes: "*",
+        seconds: "*"
+    },
+    simpleRepeatingSettings: {
+        interval: 1
     }
 });

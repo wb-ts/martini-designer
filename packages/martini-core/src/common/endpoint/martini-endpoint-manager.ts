@@ -152,3 +152,22 @@ export interface EmailEndpoint extends MartiniEndpoint, EmailSettings {
     sendReplyOnError: boolean;
     replyEmailSettings: ReplyEmailSettings;
 }
+
+export interface SchedulerEndpoint extends MartiniEndpoint {
+    stateful : boolean;
+    scheduleType : "simpleRepeating" | "cron";
+    cronSettings : CronSettings ;
+    simpleRepeatingSettings : SimpleRepeatingSettings ;
+}
+export interface CronSettings {
+    dayType : "weekday" | "monthday";
+    months: string;
+    weekdays: string;
+    days: string;
+    hours: string;
+    minutes: string;
+    seconds: string;
+ }
+export interface SimpleRepeatingSettings {
+    interval : number ;
+}

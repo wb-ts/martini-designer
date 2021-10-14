@@ -24,8 +24,8 @@
       ],
       "env": {
         "NODE_ENV": "development",
-        "MR_USERNAME": "<REPLACE>",
-        "MR_PASSWORD": "<REPLACE>",
+        "MR_USERNAME": "golden.peach.ts@gmail.com",
+        "MR_PASSWORD": "Scher*ch03140",
         "MR_ADDRESS": "localhost",
         "MR_PORT": "8080"
       },
@@ -57,8 +57,8 @@
       ],
       "env": {
         "NODE_ENV": "development",
-        "MR_USERNAME": "<REPLACE>",
-        "MR_PASSWORD": "<REPLACE>",
+        "MR_USERNAME": "golden.peach.ts@gmail.com",
+        "MR_PASSWORD": "Scher*ch03140",
         "MR_ADDRESS": "localhost",
         "MR_PORT": "8080"
       },

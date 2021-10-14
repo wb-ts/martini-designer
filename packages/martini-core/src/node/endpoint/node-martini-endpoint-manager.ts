@@ -6,7 +6,8 @@ import {
     MartiniEndpoint,
     MartiniEndpointManager,
     MartiniEndpointManagerClient,
-    RssEndpoint
+    RssEndpoint,
+    SchedulerEndpoint
 } from "../../common/endpoint/martini-endpoint-manager";
 import { MartiniEventDispatcher } from "../event/martini-event-manager";
 import { AxiosInstanceFactory } from "../http/axios-instance-factory";
@@ -108,8 +109,25 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
                 schedule: data.properties.schedule || "",
                 onlyNew: data.properties.onlyNew === "true"
             } as RssEndpoint;
+        } else if (response.data.type === "scheduler") {
+            endpoint = {
+                ...endpoint,
+                scheduleType: data.properties.scheduleType || "",
+                stateful: data.properties.stateful === "true",
+                cronSettings: {
+                    dayType: data.properties.cronDayType || "",
+                    months: data.properties.months || "",
+                    weekdays: data.properties.weekdays || "",
+                    days: data.properties.days || "",
+                    hours: data.properties.hours || "",
+                    minutes: data.properties.minutes || "",
+                    seconds: data.properties.seconds || ""
+                },
+                simpleRepeatingSettings: {
+                    interval: Number.parseInt(data.properties.interval || "1")
+                }
+            } as SchedulerEndpoint;
         }
-
         return endpoint;
     }
 
@@ -198,6 +216,21 @@ export class MartiniEndpointManagerNode implements MartiniEndpointManager {
                     "reply-password": _endpoint.replyEmailSettings.password,
                     "reply-from": _endpoint.replyEmailSettings.from,
                     "reply-ssl": _endpoint.replyEmailSettings.ssl,
+                };
+            }
+            case EndpointType.SCHEDULER: {
+                const _endpoint = endpoint as SchedulerEndpoint;
+                return {
+                    scheduleType: _endpoint.scheduleType,
+                    stateful: _endpoint.stateful,
+                    dayType: _endpoint.cronSettings.dayType,
+                    months: _endpoint.cronSettings.months,
+                    weekdays: _endpoint.cronSettings.weekdays,
+                    days: _endpoint.cronSettings.days,
+                    hours: _endpoint.cronSettings.hours,
+                    minutes: _endpoint.cronSettings.minutes,
+                    seconds: _endpoint.cronSettings.seconds,
+                    interval: _endpoint.simpleRepeatingSettings.interval
                 };
             }
         }

@@ -299,6 +299,15 @@ This is useful for retrying an operation that sometimes may not work. When this 
     send_service_response_as_reply: "Send Service Response As Reply",
     send_reply_on_error: "Send Reply On Error",
     from: "From",
+    scheduler_schedule_type_tooltip:
+        "The frequency of execution. May be in the form of a cron expression, or a simple fixed interval.",
+    scheduler_simple_repeating_tooltip:
+        "Accepts a non-negative number that denotes the interval, in seconds, at which the service will be executed.",
+    scheduler_cron_tooltip: "Like the Unix cron utility, this type allows a more fine-grained schedule configuration.",
+    scheduler_stateful_tooltip:
+        "When checked, the JobDataMap is persisted to preserve state for the next execution. Stateful jobs also disallow concurrent execution, which means triggers before the completion of an running execution are delayed.",
+    scheduler_polling_interval_seconds: "Polling Interval (seconds)",
+    stateful: "Stateful",
     connection_username_tooltip: "The username to use when authenticating to the server.",
     connection_password_tooltip: "The password to use when authenticating to the server.",
     cassandra_contact_points_tooltip: "Describes the contact points for a Cassandra cluster.",
@@ -761,19 +770,23 @@ This is useful for retrying an operation that sometimes may not work. When this 
     create_flux_title: "Create an Event Based Workflow",
     create_flux_desc: "Create a new event based workflow.",
     hide_file_extensions: "Hide File Extensions",
-    hide_file_extensions_desc: "Whether to hide the file extensions in the navigator for the files under the code folder.",
+    hide_file_extensions_desc:
+        "Whether to hide the file extensions in the navigator for the files under the code folder.",
     invoke: "Invoke",
     execute: "Execute",
     case: "Case",
     function: "Function",
     search_function_placeholder: "Search a function name...",
     rest_api_title_tooltip: "The title of the application.",
-    rest_api_version_tooltip: "Provides the version of the application API (not to be confused with the specification version).",
-    rest_api_description_tooltip: "A short description of the application. GFM syntax can be used for rich text representation.",
+    rest_api_version_tooltip:
+        "Provides the version of the application API (not to be confused with the specification version).",
+    rest_api_description_tooltip:
+        "A short description of the application. GFM syntax can be used for rich text representation.",
     rest_api_tos_tooltip: "The Terms of Service for the API.",
     rest_api_contact_name_tooltip: "The identifying name of the contact person/organization.",
     rest_api_contact_url_tooltip: "The URL pointing to the contact information. MUST be in the format of a URL.",
-    rest_api_contact_email_tooltip: "The email address of the contact person/organization. MUST be in the format of an email address.",
+    rest_api_contact_email_tooltip:
+        "The email address of the contact person/organization. MUST be in the format of an email address.",
     rest_api_license_name_tooltip: "The license name used for the API.",
     rest_api_license_url_tooltip: "A URL to the license used for the API. MUST be in the format of a URL.",
     tags: "Tags",
@@ -783,7 +796,8 @@ This is useful for retrying an operation that sometimes may not work. When this 
     duplicate_tag_name: "Duplicate tag name.",
     rest_api_doc_gen_url_tooltip: "Martini automatically generates the documentation for your API.",
     rest_api_doc_url_tooltip: "The URL for the target documentation.",
-    rest_api_doc_desc_tooltip: "A short description of the target documentation. GFM syntax can be used for rich text representation.",
+    rest_api_doc_desc_tooltip:
+        "A short description of the target documentation. GFM syntax can be used for rich text representation.",
     generated_doc_url: "Generated Doc URL",
     title: "Title",
     tos: "Terms of Service",

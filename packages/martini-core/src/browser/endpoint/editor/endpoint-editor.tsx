@@ -8,7 +8,7 @@ import messages from "martini-messages/lib/messages";
 import * as React from "react";
 import styled from "styled-components";
 import { createDefaultEndpoint } from "../../../common/endpoint/martini-endpoint-defaults";
-import { EndpointEvent, EndpointType, MartiniEndpoint, MartiniEndpointManager, RssEndpoint, EmailEndpoint } from "../../../common/endpoint/martini-endpoint-manager";
+import { EndpointEvent, EndpointType, MartiniEndpoint, MartiniEndpointManager, RssEndpoint, EmailEndpoint, SchedulerEndpoint } from "../../../common/endpoint/martini-endpoint-manager";
 import { DocumentTypeManager } from "../../../common/tracker/document-type-manager";
 import { Loader } from "../../components/loader";
 import { ConfirmDialog, createListMessage } from "../../dialogs/dialogs";
@@ -21,6 +21,7 @@ import { EndpointEventDispatcher } from "../endpoint-event-dispatcher";
 import { EndpointEditorToolbar } from "./endpoint-editor-toolbar";
 import { RssEndpointForm } from "./rss/rss-endpoint-form";
 import { EmailEndpointForm } from "./email/email-endpoint-form";
+import { SchedulerEndpointForm } from "./scheduler/scheduler-endpoint-form";
 
 export const EndpointEditorOptions = Symbol("EndpointEditorOptions");
 export interface EndpointEditorOptions {
@@ -314,6 +315,16 @@ export class EndpointEditor extends ReactWidget implements Saveable {
                 return (
                     <EmailEndpointForm
                         endpoint={this.currentEndpoint as EmailEndpoint}
+                        documentTypeProvider={() => this.documentTypeManager.getAll()}
+                        onChange={endpoint => this.handleChange(endpoint)}
+                        onValidate={errors => this.handleErrors(errors)}
+                        reset={_reset}
+                    />
+                );
+            case EndpointType.SCHEDULER:
+                return (
+                    <SchedulerEndpointForm
+                        endpoint={this.currentEndpoint as SchedulerEndpoint}
                         documentTypeProvider={() => this.documentTypeManager.getAll()}
                         onChange={endpoint => this.handleChange(endpoint)}
                         onValidate={errors => this.handleErrors(errors)}
